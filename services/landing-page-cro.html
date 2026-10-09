@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page & CRO — GrowthPilot</title>
+  <meta name="description" content="High-converting custom landing pages and scientific conversion rate optimization (CRO) that compound ad ROI.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" type="image/png" href="../assets/logo-icon-transparent.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header" id="navbar">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="../index.html" class="navbar-brand" aria-label="GrowthPilot Home">
+          <img src="../assets/logo-full-brand.png" alt="GrowthPilot Logo" class="navbar-logo-full">
+        </a>
+
+        <ul class="navbar-links">
+          <li class="nav-item-dropdown" id="servicesDropdown">
+            <a href="landing-page-cro.html" class="navbar-link active" id="servicesDropdownBtn">
+              <span>Services</span>
+              <i data-lucide="chevron-down" class="dropdown-chevron"></i>
+            </a>
+
+            <!-- Mega Menu -->
+            <div class="mega-menu" aria-label="Services Mega Menu">
+              <div class="mega-menu-inner">
+                <div class="mega-menu-services-grid">
+
+                  <a href="performance-marketing.html" class="mega-service-item">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="trending-up" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title">Performance Marketing</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">Scale</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                  <a href="web-development.html" class="mega-service-item">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="laptop" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title">Web Development</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">High Speed</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                  <a href="meta-google-ads.html" class="mega-service-item">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="megaphone" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title">Meta & Google Ads</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">Paid Media</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                  <a href="landing-page-cro.html" class="mega-service-item" style="border-color: rgba(0, 200, 83, 0.4); background: #FAFCFB;">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="layout" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title text-green">Landing Page & CRO</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">Conversion</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                </div>
+
+                <!-- Mega Menu Featured Panel (Restored as requested) -->
+                <div class="mega-menu-featured">
+                  <div>
+                    <span class="mega-featured-badge">Conversion Audit</span>
+                    <h4 class="mega-featured-title">Free Landing Page Review</h4>
+                    <p class="mega-featured-desc">
+                      Find checkout friction and conversion leaks on your mobile pages.
+                    </p>
+                  </div>
+                  <a href="../contact.html" class="btn btn-primary btn-sm"
+                    style="width: 100%; font-size: 0.82rem; padding: 10px; justify-content: center;">
+                    Claim CRO Audit →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="../case-studies.html" class="navbar-link">Case Studies</a></li>
+          <li><a href="../about.html" class="navbar-link">About</a></li>
+          <li><a href="../contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+
+        <div class="navbar-cta-wrapper">
+          <a href="../contact.html" class="btn btn-primary btn-sm">
+            Let's Scale Your Brand
+            <i data-lucide="arrow-right" class="icon-inline"></i>
+          </a>
+          <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu">
+            <i data-lucide="menu" id="navIcon"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+      <div style="border-bottom: 1px solid var(--color-border-subtle); padding-bottom: 8px;">
+        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-muted); text-transform: uppercase; margin-bottom: 8px;">Services</div>
+        <div style="display: flex; flex-direction: column; gap: 8px; padding-left: 10px;">
+          <a href="performance-marketing.html" class="mobile-nav-link" style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Performance Marketing</a>
+          <a href="web-development.html" class="mobile-nav-link" style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Web Development</a>
+          <a href="meta-google-ads.html" class="mobile-nav-link" style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Meta Ads & Google Ads</a>
+          <a href="landing-page-cro.html" class="mobile-nav-link text-green" style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Landing Page & CRO</a>
+        </div>
+      </div>
+      <a href="../case-studies.html" class="mobile-nav-link">Case Studies</a>
+      <a href="../about.html" class="mobile-nav-link">About</a>
+      <a href="../contact.html" class="mobile-nav-link">Contact</a>
+      <a href="../contact.html" class="btn btn-primary" style="margin-top: 12px; width: 100%;">Let's Scale Your Brand →</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- SUBPAGE HERO (CENTERED) -->
+    <section class="subpage-hero">
+      <div class="container">
+        <div class="breadcrumb-nav">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="../index.html#services">Services</a>
+          <span>/</span>
+          <span style="color: var(--color-text-primary); font-weight: 600;">Landing Page & CRO</span>
+        </div>
+
+        <div class="subpage-hero-centered">
+          <div class="eyebrow-pill" style="margin: 0 auto 16px auto;">
+            <span class="pulsing-dot"></span>
+            <span>CONVERSION RATE OPTIMIZATION</span>
+          </div>
+
+          <h1 class="section-title" style="margin-bottom: 16px; max-width: 840px;">
+            High-Converting <span class="text-green">Landing Pages & CRO</span> Engineered to Multiply Returns.
+          </h1>
+
+          <p class="section-subtitle" style="margin: 0 auto 26px auto; max-width: 740px;">
+            Sending cold ad traffic to a generic homepage is burning budget. We design, build, and multivariate-test bespoke advertorials, listicles, and high-velocity product landers engineered to turn curious scrollers into loyal, high-AOV customers.
+          </p>
+
+          <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+            <a href="../contact.html" class="btn btn-primary">
+              Request CRO Strategy
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#capabilities" class="btn btn-secondary">
+              Explore Capabilities ↓
+            </a>
+          </div>
+
+          <!-- Centered Benchmark Stats Bar -->
+          <div class="service-hero-benchmark-bar">
+            <div class="benchmark-stat-item">
+              <span class="benchmark-stat-val">+48%</span>
+              <span class="benchmark-stat-label">Average CVR Lift</span>
+            </div>
+            <div style="width: 1px; height: 32px; background: var(--color-border);" class="desktop-only"></div>
+            <div class="benchmark-stat-item">
+              <span class="benchmark-stat-val">0.45s</span>
+              <span class="benchmark-stat-label">Mobile Load Speed</span>
+            </div>
+            <div style="width: 1px; height: 32px; background: var(--color-border);" class="desktop-only"></div>
+            <div class="benchmark-stat-item">
+              <span class="benchmark-stat-val">89%</span>
+              <span class="benchmark-stat-label">Checkout Completion</span>
+            </div>
+            <div style="width: 1px; height: 32px; background: var(--color-border);" class="desktop-only"></div>
+            <div class="benchmark-stat-item">
+              <span class="benchmark-stat-val">150+</span>
+              <span class="benchmark-stat-label">Live A/B Tests Run</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. CAPABILITIES SECTION (CENTERED) -->
+    <section class="section" id="capabilities" style="background: #FFFFFF;">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>WHAT WE DELIVER</span>
+          </div>
+          <h2 class="section-title">The Scientific CRO Framework</h2>
+          <p class="section-subtitle">How we convert clicks into paying customers systematically with behavioural science.</p>
+        </div>
+
+        <div class="capabilities-grid-3">
+          <!-- Card 1 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="file-text"></i></div>
+            <h3 class="capability-title">Bespoke Advertorials & Listicles</h3>
+            <p class="capability-desc">High-trust educational pre-sale pages and editorial reviews that warm up cold prospects, establish clinical and social proof, and eliminate hesitation before the buy box.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="git-branch"></i></div>
+            <h3 class="capability-title">Continuous A/B Experimentation</h3>
+            <p class="capability-desc">Statistical multivariate testing across hero value propositions, bundle offer mechanics, social proof placement, and sticky buy buttons to compound conversion gains.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="shopping-bag"></i></div>
+            <h3 class="capability-title">AOV & Bundle Maximization</h3>
+            <p class="capability-desc">Tiered quantity discounts, smart in-cart upsells, and post-purchase one-click offers engineered to maximize average order value and absorb rising media costs.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="mouse-pointer"></i></div>
+            <h3 class="capability-title">Friction-Free Mobile Checkout</h3>
+            <p class="capability-desc">Eliminating unnecessary checkout form friction, enabling 1-tap express checkout (Shop Pay, Apple Pay, UPI), and designing sticky bottom CTA drawers for mobile shoppers.</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="activity"></i></div>
+            <h3 class="capability-title">Heatmap & Drop-Off Analytics</h3>
+            <p class="capability-desc">Deep session recording audits, click heatmaps, and scroll depth tracking using Microsoft Clarity and Hotjar to uncover exactly where prospective buyers hesitate or leave.</p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="sparkles"></i></div>
+            <h3 class="capability-title">Dynamic UTM & Geo Personalization</h3>
+            <p class="capability-desc">Dynamically matching headlines, localized currency, and matched ad imagery based on incoming UTM campaign parameters and visitor geography for 1-to-1 message alignment.</p>
+          </div>
+        </div>
+
+        <!-- Tech Stack Strip -->
+        <div class="tech-stack-strip">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-text-primary);">CRO Tech Stack:</span>
+          <span class="tech-badge">Replo / Instant Commerce</span>
+          <span class="tech-badge">VWO & Optimizely</span>
+          <span class="tech-badge">Hotjar & Microsoft Clarity</span>
+          <span class="tech-badge">Shopify Plus Checkout Extensions</span>
+          <span class="tech-badge">Next.js Headless Landers</span>
+          <span class="tech-badge">Figma Design Systems</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 4-STEP EXECUTION FRAMEWORK (CENTERED) -->
+    <section class="section" style="background: #FAFCFB; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>OUR METHODOLOGY</span>
+          </div>
+          <h2 class="section-title">The 4-Step CRO Sprint Engine</h2>
+          <p class="section-subtitle">How we turn traffic leaks into compounding revenue expansion through iterative testing.</p>
+        </div>
+
+        <div class="service-framework-grid">
+          <div class="framework-card">
+            <span class="framework-step-num">PHASE 01</span>
+            <h3 class="framework-title">Friction & Funnel Audit</h3>
+            <p class="framework-desc">We analyze GA4 drop-off funnels, session recordings, and mobile speed bottlenecks to prioritize high-impact conversion friction points.</p>
+          </div>
+
+          <div class="framework-card">
+            <span class="framework-step-num">PHASE 02</span>
+            <h3 class="framework-title">Psychology & Wireframing</h3>
+            <p class="framework-desc">We design high-converting wireframes, persuasive direct-response copy, objection busters, and irresistible tiered bundle offer structures.</p>
+          </div>
+
+          <div class="framework-card">
+            <span class="framework-step-num">PHASE 03</span>
+            <h3 class="framework-title">Sub-Second Code & Launch</h3>
+            <p class="framework-desc">We build lightning-fast custom pages with zero script bloat, flawless mobile responsiveness, and 100% lossless conversion pixel tracking.</p>
+          </div>
+
+          <div class="framework-card">
+            <span class="framework-step-num">PHASE 04</span>
+            <h3 class="framework-title">Multivariate A/B Testing</h3>
+            <p class="framework-desc">We split live ad traffic using statistical significance models to identify winning variants and continuously scale your revenue per visitor (RPV).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COMPARISON SECTION (CENTERED) -->
+    <section class="section" style="background: #FFFFFF;">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>WHY CHOOSE US</span>
+          </div>
+          <h2 class="section-title">How Our CRO Compares</h2>
+          <p class="section-subtitle">Why leading DTC brands choose our high-velocity landing page engine over traditional designers.</p>
+        </div>
+
+        <div class="service-comparison-grid">
+          <!-- Traditional Agency / Freelancer -->
+          <div class="comparison-card">
+            <span class="comparison-tag" style="color: var(--color-muted); background: #F1F5F4;">FREELANCER / TEMPLATES</span>
+            <h3 class="comparison-title">Template Builders</h3>
+            <p class="comparison-desc">Basic page builder setups with slow load times, bloated scripts, and no statistical testing.</p>
+            <ul class="comparison-list">
+              <li class="comparison-item cross"><i data-lucide="x"></i> Generic drag-and-drop templates with slow load speeds</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Superficial button color tweaks instead of offer psychology</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> No formal statistical hypothesis testing framework</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Disconnected from the live ad hooks bringing traffic</li>
+            </ul>
+          </div>
+
+          <!-- GrowthPilot (Highlighted) -->
+          <div class="comparison-card highlight">
+            <span class="comparison-tag">RECOMMENDED PARTNERSHIP</span>
+            <h3 class="comparison-title">GrowthPilot CRO Engine</h3>
+            <p class="comparison-desc">Dedicated direct-response copywriters, UI designers, and conversion engineers testing continuously.</p>
+            <ul class="comparison-list">
+              <li class="comparison-item check"><i data-lucide="check"></i> Bespoke High-Converting Advertorials & Landers</li>
+              <li class="comparison-item check"><i data-lucide="check"></i> Sub-Second Mobile Load Times (<0.5s Benchmark)</li>
+              <li class="comparison-item check"><i data-lucide="check"></i> Rigorous 95%+ Statistical Significance Testing</li>
+              <li class="comparison-item check"><i data-lucide="check"></i> Full Direct Response Copy, Wireframes & Development</li>
+              <li class="comparison-item check"><i data-lucide="check"></i> 1-to-1 Synchronization With Meta & Google Ad Hooks</li>
+            </ul>
+          </div>
+
+          <!-- In-House Solo Team -->
+          <div class="comparison-card">
+            <span class="comparison-tag" style="color: var(--color-muted); background: #F1F5F4;">INTERNAL TEAM</span>
+            <h3 class="comparison-title">In-House Generalists</h3>
+            <p class="comparison-desc">Internal developers and graphic designers prioritizing brand aesthetic over commercial conversion.</p>
+            <ul class="comparison-list">
+              <li class="comparison-item cross"><i data-lucide="x"></i> Developers lack direct-response conversion psychology</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Designers lack data, heatmaps, and funnel telemetry skills</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Slower sprint velocity due to competing company backlogs</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> High monthly payroll without guaranteed conversion lifts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SERVICE FAQ SECTION (CENTERED) -->
+    <section class="section" style="background: #FAFCFB; border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>FREQUENTLY ASKED QUESTIONS</span>
+          </div>
+          <h2 class="section-title">Landing Page & CRO FAQs</h2>
+          <p class="section-subtitle">Answers to essential questions regarding our landing page design and conversion rate optimization process.</p>
+        </div>
+
+        <div class="service-faq-wrap">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Why build dedicated landing pages instead of sending ad traffic to our product page?</span>
+              <i data-lucide="chevron-down" class="faq-chevron"></i>
+            </button>
+            <div class="faq-answer-panel">
+              <p>Standard eCommerce product pages carry dozens of exit distractions (navigation bars, unrelated menu links, category banners) and lack cohesive direct-response storytelling. Dedicated landing pages and advertorials guide prospects through a focused narrative tailored specifically to the ad hook they clicked, routinely lifting conversion rates by 30% to 60%.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>What platform do you use to build our landing pages?</span>
+              <i data-lucide="chevron-down" class="faq-chevron"></i>
+            </button>
+            <div class="faq-answer-panel">
+              <p>We work seamlessly with your existing eCommerce tech stack without disruption. For Shopify brands, we build using Replo, Instant Commerce, or custom headless Next.js pages that plug directly into your native Shopify checkout, payment gateways, and inventory management systems.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>How do you calculate statistical significance for A/B tests?</span>
+              <i data-lucide="chevron-down" class="faq-chevron"></i>
+            </button>
+            <div class="faq-answer-panel">
+              <p>We use rigorous Bayesian and Frequentist statistical significance models, requiring a minimum of 95% confidence level before calling a winner. We track primary conversion rate, Average Order Value (AOV), and Revenue Per Visitor (RPV) to ensure that the winning variation drives genuine bottom-line profit.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>How fast can we launch our first high-converting landing page?</span>
+              <i data-lucide="chevron-down" class="faq-chevron"></i>
+            </button>
+            <div class="faq-answer-panel">
+              <p>Our typical sprint delivery is 7 to 10 days from project kickoff to live traffic for your first bespoke landing page. This includes comprehensive audience research, direct-response copywriting, custom UI/UX design in Figma, responsive development, and QA tracking verification.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA (CENTERED) -->
+    <section class="final-cta-section" style="border-top: 1px solid var(--color-border);">
+      <div class="cta-glow-mesh"></div>
+      <div class="container">
+        <div class="final-cta-box">
+          <div class="eyebrow-pill" style="margin-bottom: 20px;">
+            <span class="pulsing-dot"></span>
+            <span>GET IN TOUCH</span>
+          </div>
+          <h2 class="final-cta-title">Turn More Ad Clicks Into Customers</h2>
+          <p class="final-cta-desc">Let us build your next high-converting landing page and scale your conversion rates.</p>
+          <div class="final-cta-actions">
+            <a href="../contact.html" class="btn btn-primary">Schedule CRO Review <i data-lucide="arrow-right"></i></a>
+            <a href="../case-studies.html" class="btn btn-secondary">Explore Case Studies →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="../index.html">
+            <img src="../assets/logo-full-brand.png" alt="GrowthPilot Logo" style="height: 42px; width: auto; max-width: 200px; object-fit: contain;">
+          </a>
+          <p class="footer-tagline">
+            Performance Marketing That Scales. Engineering sustainable growth systems for modern digital brands.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="performance-marketing.html" class="footer-link">Services</a></li>
+            <li><a href="../case-studies.html" class="footer-link">Case Studies</a></li>
+            <li><a href="../about.html" class="footer-link">About</a></li>
+            <li><a href="../contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links-list">
+            <li><a href="performance-marketing.html" class="footer-link">Performance Marketing</a></li>
+            <li><a href="web-development.html" class="footer-link">Web Development</a></li>
+            <li><a href="meta-google-ads.html" class="footer-link">Meta Ads & Google Ads</a></li>
+            <li><a href="landing-page-cro.html" class="footer-link">Landing Page & CRO</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Inquiries -->
+        <div>
+          <div class="footer-col-title">Contact & Inquiries</div>
+          <ul class="footer-links-list">
+            <li class="footer-link">hello@growthpilot.agency</li>
+            <li class="footer-link">Mon – Fri: 9am – 6pm EST</li>
+            <li><a href="../contact.html" class="footer-link text-green" style="font-weight: 700;">Schedule Growth Audit →</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          © <span id="currentYear"></span> GrowthPilot. All rights reserved. Performance Marketing Agency.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#" id="privacyPolicyBtn">Privacy Policy</a>
+          <a href="#" id="termsBtn">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Legal (Privacy & Terms) -->
+  <div class="modal-overlay" id="legalModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+      <h3 id="modalTitle" style="color: var(--color-text-primary); font-size: 1.5rem; margin-bottom: 16px;">Privacy Policy</h3>
+      <div id="modalBody" style="color: var(--color-text-secondary); font-size: 0.92rem; line-height: 1.7;">
+        <!-- Filled dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <script src="../app.js"></script>
+</body>
+</html>

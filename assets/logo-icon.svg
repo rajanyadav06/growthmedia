@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <defs>
+    <linearGradient id="gpArrowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C853" />
+      <stop offset="100%" stop-color="#00E676" />
+    </linearGradient>
+    <filter id="gpGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background badge -->
+  <rect width="40" height="40" rx="10" fill="#0D0D0D" stroke="#1F1F1F" stroke-width="1.2"/>
+  <!-- G contour -->
+  <path d="M22 10C15.3726 10 10 15.3726 10 22C10 28.6274 15.3726 34 22 34C27.5 34 31.8 30.2 33.4 25H22V20H38C38.3 21.2 38.5 22.5 38.5 23.8C38.5 31.8 31.5 38 22 38C13.1634 38 6 30.8366 6 22C6 13.1634 13.1634 6 22 6C26.5 6 30.5 7.8 33.3 10.8L30 13.8C28 11.5 25.1 10 22 10Z" fill="#FFFFFF" fill-opacity="0.9" />
+  <!-- Growth Scaling Arrow: ascending top-right neon flight vector -->
+  <path d="M21 21L33 9M33 9H24M33 9V18" stroke="url(#gpArrowGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#gpGlow)"/>
+</svg>

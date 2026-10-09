@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance Marketing — GrowthPilot</title>
+  <meta name="description" content="Data-driven performance marketing engineered for scale, lower CAC, and maximum commercial return on ad spend.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" type="image/png" href="../assets/logo-icon-transparent.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header" id="navbar">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="../index.html" class="navbar-brand" aria-label="GrowthPilot Home">
+          <img src="../assets/logo-full-brand.png" alt="GrowthPilot Logo" class="navbar-logo-full">
+        </a>
+
+        <ul class="navbar-links">
+          <li class="nav-item-dropdown" id="servicesDropdown">
+            <a href="performance-marketing.html" class="navbar-link active" id="servicesDropdownBtn">
+              <span>Services</span>
+              <i data-lucide="chevron-down" class="dropdown-chevron"></i>
+            </a>
+
+            <!-- Mega Menu -->
+            <div class="mega-menu" aria-label="Services Mega Menu">
+              <div class="mega-menu-inner">
+                <div class="mega-menu-services-grid">
+
+                  <a href="performance-marketing.html" class="mega-service-item" style="border-color: rgba(0, 200, 83, 0.4); background: #FAFCFB;">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="trending-up" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title text-green">Performance Marketing</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">Scale</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                  <a href="web-development.html" class="mega-service-item">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="laptop" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title">Web Development</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">High Speed</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                  <a href="meta-google-ads.html" class="mega-service-item">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="megaphone" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title">Meta & Google Ads</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">Paid Media</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                  <a href="landing-page-cro.html" class="mega-service-item">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="layout" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title">Landing Page & CRO</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">Conversion</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                </div>
+
+                <!-- Mega Menu Featured Panel (Restored as requested) -->
+                <div class="mega-menu-featured">
+                  <div>
+                    <span class="mega-featured-badge">Growth Framework</span>
+                    <h4 class="mega-featured-title">Free Growth Strategy Audit</h4>
+                    <p class="mega-featured-desc">
+                      Let our team analyze your current ad spend, attribution, and unit economics.
+                    </p>
+                  </div>
+                  <a href="../contact.html" class="btn btn-primary btn-sm"
+                    style="width: 100%; font-size: 0.82rem; padding: 10px; justify-content: center;">
+                    Claim Free Audit →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="../case-studies.html" class="navbar-link">Case Studies</a></li>
+          <li><a href="../about.html" class="navbar-link">About</a></li>
+          <li><a href="../contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+
+        <div class="navbar-cta-wrapper">
+          <a href="../contact.html" class="btn btn-primary btn-sm">
+            Let's Scale Your Brand
+            <i data-lucide="arrow-right" class="icon-inline"></i>
+          </a>
+          <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu">
+            <i data-lucide="menu" id="navIcon"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+      <div style="border-bottom: 1px solid var(--color-border-subtle); padding-bottom: 8px;">
+        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-muted); text-transform: uppercase; margin-bottom: 8px;">Services</div>
+        <div style="display: flex; flex-direction: column; gap: 8px; padding-left: 10px;">
+          <a href="performance-marketing.html" class="mobile-nav-link text-green" style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Performance Marketing</a>
+          <a href="web-development.html" class="mobile-nav-link" style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Web Development</a>
+          <a href="meta-google-ads.html" class="mobile-nav-link" style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Meta Ads & Google Ads</a>
+          <a href="landing-page-cro.html" class="mobile-nav-link" style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Landing Page & CRO</a>
+        </div>
+      </div>
+      <a href="../case-studies.html" class="mobile-nav-link">Case Studies</a>
+      <a href="../about.html" class="mobile-nav-link">About</a>
+      <a href="../contact.html" class="mobile-nav-link">Contact</a>
+      <a href="../contact.html" class="btn btn-primary" style="margin-top: 12px; width: 100%;">Let's Scale Your Brand →</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- SUBPAGE HERO -->
+    <section class="subpage-hero">
+      <div class="container">
+        <div class="breadcrumb-nav">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="../index.html#services">Services</a>
+          <span>/</span>
+          <span style="color: var(--color-text-primary); font-weight: 600;">Performance Marketing</span>
+        </div>
+
+        <div class="subpage-hero-centered">
+          <div class="eyebrow-pill" style="margin: 0 auto 16px auto;">
+            <span class="pulsing-dot"></span>
+            <span>SCALING ARCHITECTURE</span>
+          </div>
+
+          <h1 class="section-title" style="margin-bottom: 16px; max-width: 820px;">
+            Data-Driven <span class="text-green">Performance Marketing</span> Built for Modern Commerce.
+          </h1>
+
+          <p class="section-subtitle" style="margin: 0 auto 26px auto; max-width: 720px;">
+            We eliminate wasted ad spend and engineer predictable customer acquisition engines. Combining first-party server attribution, algorithmic bid testing, and commercial unit economics to turn ad spend into compounding net profit.
+          </p>
+
+          <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+            <a href="../contact.html" class="btn btn-primary">
+              Book Performance Audit
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#capabilities" class="btn btn-secondary">
+              Explore Capabilities ↓
+            </a>
+          </div>
+
+          <!-- Centered Benchmark Stats Bar -->
+          <div class="service-hero-benchmark-bar">
+            <div class="benchmark-stat-item">
+              <span class="benchmark-stat-val">4.6x</span>
+              <span class="benchmark-stat-label">Avg Blended ROAS</span>
+            </div>
+            <div style="width: 1px; height: 32px; background: var(--color-border);" class="desktop-only"></div>
+            <div class="benchmark-stat-item">
+              <span class="benchmark-stat-val">-28%</span>
+              <span class="benchmark-stat-label">CAC Reduction</span>
+            </div>
+            <div style="width: 1px; height: 32px; background: var(--color-border);" class="desktop-only"></div>
+            <div class="benchmark-stat-item">
+              <span class="benchmark-stat-val">99.4%</span>
+              <span class="benchmark-stat-label">Attribution Precision</span>
+            </div>
+            <div style="width: 1px; height: 32px; background: var(--color-border);" class="desktop-only"></div>
+            <div class="benchmark-stat-item">
+              <span class="benchmark-stat-val">₹15Cr+</span>
+              <span class="benchmark-stat-label">Managed Ad Spend</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. CAPABILITIES SECTION (CENTERED) -->
+    <section class="section" id="capabilities" style="background: #FFFFFF;">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>WHAT WE DELIVER</span>
+          </div>
+          <h2 class="section-title">Core Performance Marketing Capabilities</h2>
+          <p class="section-subtitle">A holistic execution system ensuring every advertising dollar drives verifiable commercial value.</p>
+        </div>
+
+        <div class="capabilities-grid-3">
+          <!-- Card 1 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="layers"></i></div>
+            <h3 class="capability-title">Full-Funnel Media Architecture</h3>
+            <p class="capability-desc">We structure campaigns into cold prospecting, warm consideration, and high-intent retargeting buckets, preventing audience fatigue and internal ad overlap.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="database"></i></div>
+            <h3 class="capability-title">First-Party Server Attribution</h3>
+            <p class="capability-desc">We implement robust CAPI and server tracking to feed ad algorithms verified conversion signals, recovering lost iOS tracking signals and optimizing ad delivery.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="sparkles"></i></div>
+            <h3 class="capability-title">Creative Angle Sprint Testing</h3>
+            <p class="capability-desc">Systematic weekly iterations across 5 core angles: pain point, founder story, social proof, product demo, and direct comparison to find winning ad hooks.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="sliders"></i></div>
+            <h3 class="capability-title">Algorithmic Bid Testing</h3>
+            <p class="capability-desc">Automated bid cap, cost cap, and target CPA experimentation to lock in high-intent purchasers at optimal customer acquisition economics.</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="pie-chart"></i></div>
+            <h3 class="capability-title">Contribution Margin Modeling</h3>
+            <p class="capability-desc">Budgets shift dynamically based on real contribution margin and customer lifetime value, rather than misleading platform-reported vanity metrics.</p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="repeat"></i></div>
+            <h3 class="capability-title">Retention & LTV Synchronization</h3>
+            <p class="capability-desc">We synchronize paid media acquisition with post-purchase email & SMS flows, lifting repeat order velocity and extending customer lifetime value.</p>
+          </div>
+        </div>
+
+        <!-- Tech Stack Strip -->
+        <div class="tech-stack-strip">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-text-primary);">Tracking & Tools:</span>
+          <span class="tech-badge">Meta Conversions API</span>
+          <span class="tech-badge">Google Ads Enhanced Conversions</span>
+          <span class="tech-badge">Google Analytics 4</span>
+          <span class="tech-badge">Triple Whale / Northbeam</span>
+          <span class="tech-badge">BigQuery Data Pipeline</span>
+          <span class="tech-badge">Shopify Plus Telemetry</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 4-STEP EXECUTION FRAMEWORK (CENTERED) -->
+    <section class="section" style="background: #FAFCFB; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>OUR METHODOLOGY</span>
+          </div>
+          <h2 class="section-title">The 4-Step Performance Engine</h2>
+          <p class="section-subtitle">How we take your accounts from volatile ad spend to compounding, predictable monthly profit.</p>
+        </div>
+
+        <div class="service-framework-grid">
+          <div class="framework-card">
+            <span class="framework-step-num">PHASE 01</span>
+            <h3 class="framework-title">Account & Unit Audit</h3>
+            <p class="framework-desc">We dissect past campaign history, customer acquisition costs, blended MER, and historical creative fatigue to pinpoint hidden profit leaks.</p>
+          </div>
+
+          <div class="framework-card">
+            <span class="framework-step-num">PHASE 02</span>
+            <h3 class="framework-title">Telemetry & Infrastructure</h3>
+            <p class="framework-desc">Implementation of lossless server-side CAPI tracking and offline conversion feeds so Meta and Google algorithms receive 100% clean data.</p>
+          </div>
+
+          <div class="framework-card">
+            <span class="framework-step-num">PHASE 03</span>
+            <h3 class="framework-title">Creative Angle Sprints</h3>
+            <p class="framework-desc">Rapid deployment of high-converting UGC concepts, hook variations, and product demonstrations tested in isolated algorithmic sandbox campaigns.</p>
+          </div>
+
+          <div class="framework-card">
+            <span class="framework-step-num">PHASE 04</span>
+            <h3 class="framework-title">Profitable Budget Scale</h3>
+            <p class="framework-desc">Systematic vertical and horizontal scaling with cost caps and automated rules to double ad spend without deteriorating customer acquisition cost.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COMPARISON SECTION (CENTERED) -->
+    <section class="section" style="background: #FFFFFF;">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>WHY GROWTHPILOT</span>
+          </div>
+          <h2 class="section-title">How We Compare to Alternatives</h2>
+          <p class="section-subtitle">See why high-growth brands choose our dedicated full-funnel performance partner model.</p>
+        </div>
+
+        <div class="service-comparison-grid">
+          <!-- Traditional Agency -->
+          <div class="comparison-card">
+            <span class="comparison-tag" style="color: var(--color-muted); background: #F1F5F4;">TRADITIONAL AGENCY</span>
+            <h3 class="comparison-title">Standard Agency</h3>
+            <p class="comparison-desc">Junior media buyers running cookie-cutter templates with monthly vanity reporting.</p>
+            <ul class="comparison-list">
+              <li class="comparison-item cross"><i data-lucide="x"></i> Relies on platform-reported ROAS</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Generic creative testing (1-2 ads/month)</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Disconnected from website CRO</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Slow response times & weekly tickets</li>
+            </ul>
+          </div>
+
+          <!-- GrowthPilot (Highlighted) -->
+          <div class="comparison-card highlight">
+            <span class="comparison-tag">RECOMMENDED PARTNERSHIP</span>
+            <h3 class="comparison-title">GrowthPilot Engine</h3>
+            <p class="comparison-desc">Senior growth strategists managing end-to-end media, server attribution, and creative velocity.</p>
+            <ul class="comparison-list">
+              <li class="comparison-item check"><i data-lucide="check"></i> 100% Contribution Margin & MER Focus</li>
+              <li class="comparison-item check"><i data-lucide="check"></i> Weekly 8-12 Creative Angle Sprints</li>
+              <li class="comparison-item check"><i data-lucide="check"></i> Full-Funnel CAPI & Server Tracking</li>
+              <li class="comparison-item check"><i data-lucide="check"></i> Integrated Custom Landing Page CRO</li>
+              <li class="comparison-item check"><i data-lucide="check"></i> Direct Slack / WhatsApp Team Access</li>
+            </ul>
+          </div>
+
+          <!-- In-House Team -->
+          <div class="comparison-card">
+            <span class="comparison-tag" style="color: var(--color-muted); background: #F1F5F4;">INTERNAL HIRING</span>
+            <h3 class="comparison-title">In-House Solo Hire</h3>
+            <p class="comparison-desc">A single internal marketer expected to write copy, edit videos, analyze data, and run campaigns.</p>
+            <ul class="comparison-list">
+              <li class="comparison-item cross"><i data-lucide="x"></i> Expensive overhead & recruitment costs</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Limited cross-industry data exposure</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Single point of failure if they leave</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Additional expensive software subscriptions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SERVICE FAQ SECTION (CENTERED) -->
+    <section class="section" style="background: #FAFCFB; border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>FREQUENTLY ASKED QUESTIONS</span>
+          </div>
+          <h2 class="section-title">Performance Marketing FAQs</h2>
+          <p class="section-subtitle">Common questions brands ask before scaling their advertising spend with us.</p>
+        </div>
+
+        <div class="service-faq-wrap">
+          <div class="faq-list">
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false">
+                <span>What is the minimum ad budget required to work together?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </button>
+              <div class="faq-answer">
+                <p>We typically work with brands spending at least ₹1,00,000 to ₹15,00,000+ per month on paid advertising. This provides adequate statistical volume to run algorithmic bid tests and creative sprints efficiently.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false">
+                <span>How quickly can we expect to see measurable results?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Telemetry, CAPI tracking, and baseline diagnostics are completed in Week 1. Initial creative sprints and bid tests launch in Week 2. Most clients observe noticeable CAC reduction and ROAS stabilization within the first 21 to 30 days.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false">
+                <span>Do you create the ad creatives and video content, or do we provide them?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </button>
+              <div class="faq-answer">
+                <p>We handle end-to-end creative strategy: writing high-converting hooks, designing static visual angles, scripting UGC briefs, and editing video iterations. You can provide raw product footage or we can work with your existing media library.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false">
+                <span>How do you handle reporting and communication?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </button>
+              <div class="faq-answer">
+                <p>We provide live 24/7 client dashboards tracking blended MER, net profit, and real-time revenue. You have a dedicated private Slack or WhatsApp channel with your lead media buyer and weekly strategic sprint reviews.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA (CENTERED) -->
+    <section class="final-cta-section" style="border-top: 1px solid var(--color-border);">
+      <div class="cta-glow-mesh"></div>
+      <div class="container">
+        <div class="final-cta-box">
+          <div class="eyebrow-pill" style="margin-bottom: 20px;">
+            <span class="pulsing-dot"></span>
+            <span>GET IN TOUCH</span>
+          </div>
+          <h2 class="final-cta-title">Ready to Scale Your Performance Marketing?</h2>
+          <p class="final-cta-desc">Let our performance team audit your accounts and design a custom, high-converting scaling roadmap.</p>
+          <div class="final-cta-actions">
+            <a href="../contact.html" class="btn btn-primary">Schedule Performance Audit <i data-lucide="arrow-right"></i></a>
+            <a href="web-development.html" class="btn btn-secondary">Next: Web Development →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="../index.html">
+            <img src="../assets/logo-full-brand.png" alt="GrowthPilot Logo" style="height: 42px; width: auto; max-width: 200px; object-fit: contain;">
+          </a>
+          <p class="footer-tagline">
+            Performance Marketing That Scales. Engineering sustainable growth systems for modern digital brands.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="performance-marketing.html" class="footer-link">Services</a></li>
+            <li><a href="../case-studies.html" class="footer-link">Case Studies</a></li>
+            <li><a href="../about.html" class="footer-link">About</a></li>
+            <li><a href="../contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links-list">
+            <li><a href="performance-marketing.html" class="footer-link">Performance Marketing</a></li>
+            <li><a href="web-development.html" class="footer-link">Web Development</a></li>
+            <li><a href="meta-google-ads.html" class="footer-link">Meta Ads & Google Ads</a></li>
+            <li><a href="landing-page-cro.html" class="footer-link">Landing Page & CRO</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Inquiries -->
+        <div>
+          <div class="footer-col-title">Contact & Inquiries</div>
+          <ul class="footer-links-list">
+            <li class="footer-link">hello@growthpilot.agency</li>
+            <li class="footer-link">Mon – Fri: 9am – 6pm EST</li>
+            <li><a href="../contact.html" class="footer-link text-green" style="font-weight: 700;">Schedule Growth Audit →</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          © <span id="currentYear"></span> GrowthPilot. All rights reserved. Performance Marketing Agency.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#" id="privacyPolicyBtn">Privacy Policy</a>
+          <a href="#" id="termsBtn">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Legal (Privacy & Terms) -->
+  <div class="modal-overlay" id="legalModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+      <h3 id="modalTitle" style="color: var(--color-text-primary); font-size: 1.5rem; margin-bottom: 16px;">Privacy Policy</h3>
+      <div id="modalBody" style="color: var(--color-text-secondary); font-size: 0.92rem; line-height: 1.7;">
+        <!-- Filled dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <script src="../app.js"></script>
+</body>
+</html>

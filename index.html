@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrowthPilot — Performance Marketing That Scales</title>
+  <meta name="description"
+    content="GrowthPilot is a modern performance marketing agency helping ambitious brands scale through Performance Marketing, Web Development, Meta Ads, Google Ads, and Landing Page CRO.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" type="image/png" href="assets/logo-icon-transparent.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       1. NAVBAR
+       ======================================================================== -->
+  <header class="site-header" id="navbar">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Logo -->
+        <a href="#hero" class="navbar-brand" aria-label="GrowthPilot Home">
+          <img src="assets/logo-full-brand.png" alt="GrowthPilot Logo — Performance Marketing That Scales"
+            class="navbar-logo-full">
+        </a>
+
+        <!-- Desktop Navigation Links (Only Services, Case Studies, About, Contact) -->
+        <ul class="navbar-links">
+          <!-- Services Mega Menu Dropdown -->
+          <li class="nav-item-dropdown" id="servicesDropdown">
+            <a href="services/performance-marketing.html" class="navbar-link" id="servicesDropdownBtn"
+              aria-expanded="false" aria-haspopup="true">
+              <span>Services</span>
+              <i data-lucide="chevron-down" class="dropdown-chevron"></i>
+            </a>
+
+            <!-- Mega Menu -->
+            <div class="mega-menu" aria-label="Services Mega Menu">
+              <div class="mega-menu-inner">
+                <div class="mega-menu-services-grid">
+
+                  <a href="services/performance-marketing.html" class="mega-service-item">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="trending-up" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title">Performance Marketing</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">Scale</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                  <a href="services/web-development.html" class="mega-service-item">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="laptop" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title">Web Development</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">High Speed</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                  <a href="services/meta-google-ads.html" class="mega-service-item">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="megaphone" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title">Meta & Google Ads</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">Paid Media</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                  <a href="services/landing-page-cro.html" class="mega-service-item">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="layout" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title">Landing Page & CRO</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">Conversion</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                </div>
+
+                <!-- Mega Menu Featured Panel (Restored as requested) -->
+                <div class="mega-menu-featured">
+                  <div>
+                    <span class="mega-featured-badge">Growth Framework</span>
+                    <h4 class="mega-featured-title">Free Growth Strategy Audit</h4>
+                    <p class="mega-featured-desc">
+                      Let our team analyze your current ad spend, web metrics, and funnel efficiency.
+                    </p>
+                  </div>
+                  <a href="contact.html" class="btn btn-primary btn-sm"
+                    style="width: 100%; font-size: 0.82rem; padding: 10px; justify-content: center;">
+                    Claim Free Audit →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="case-studies.html" class="navbar-link">Case Studies</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+
+        <!-- Action CTA -->
+        <div class="navbar-cta-wrapper">
+          <a href="contact.html" class="btn btn-primary btn-sm">
+            Let's Scale Your Brand
+            <i data-lucide="arrow-right" class="icon-inline"></i>
+          </a>
+          <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu"
+            aria-expanded="false">
+            <i data-lucide="menu" id="navIcon"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Drawer Menu (Streamlined + Services Accordion) -->
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+      <div style="border-bottom: 1px solid var(--color-border-subtle); padding-bottom: 8px;">
+        <div
+          style="font-size: 0.85rem; font-weight: 700; color: var(--color-muted); text-transform: uppercase; margin-bottom: 8px;">
+          Services</div>
+        <div style="display: flex; flex-direction: column; gap: 8px; padding-left: 10px;">
+          <a href="services/performance-marketing.html" class="mobile-nav-link"
+            style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Performance Marketing</a>
+          <a href="services/web-development.html" class="mobile-nav-link"
+            style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Web Development</a>
+          <a href="services/meta-google-ads.html" class="mobile-nav-link"
+            style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Meta Ads & Google Ads</a>
+          <a href="services/landing-page-cro.html" class="mobile-nav-link"
+            style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Landing Page & CRO</a>
+        </div>
+      </div>
+      <a href="case-studies.html" class="mobile-nav-link">Case Studies</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="contact.html" class="btn btn-primary" style="margin-top: 12px; width: 100%;">
+        Let's Scale Your Brand →
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         2. HERO SECTION
+         ======================================================================== -->
+    <!-- ========================================================================
+         2. HERO SECTION (SHOPIFY & META PERFORMANCE MARKETING FOCUS)
+         ======================================================================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Left Column: Copy, Value Props, Actions, Stats -->
+          <div class="hero-left-col">
+            <div class="eyebrow-pill">
+              <span class="pulsing-dot"></span>
+              <span>SHOPIFY & META ADS PERFORMANCE MARKETING</span>
+            </div>
+
+            <h1 class="hero-title">
+              Scale Your <span class="text-green">Shopify Sales</span> With High-ROAS Meta Ads.
+            </h1>
+
+            <p class="hero-desc">
+              We engineer predictable, profitable customer acquisition engines for Shopify eCommerce brands. Combining
+              algorithmic Meta Ads scaling, high-converting creative sprints, and checkout CRO that turn advertising
+              spend into compounding client sales and net profit.
+            </p>
+
+            <!-- Certified Partner Tags -->
+            <div class="hero-partner-badges">
+              <span class="hero-partner-tag">
+                <i data-lucide="shopping-bag"></i>
+                Shopify Plus Partner
+              </span>
+              <span class="hero-partner-tag">
+                <i data-lucide="share-2"></i>
+                Meta Business Partner
+              </span>
+              <span class="hero-partner-tag">
+                <i data-lucide="shield-check"></i>
+                Lossless CAPI Tracking
+              </span>
+            </div>
+
+            <!-- Action CTAs -->
+            <div class="hero-actions">
+              <a href="contact.html" class="btn btn-primary">
+                Scale Your Shopify Store
+                <i data-lucide="arrow-right"></i>
+              </a>
+              <a href="case-studies.html" class="btn btn-secondary">
+                View Client Results
+                <i data-lucide="trending-up"></i>
+              </a>
+            </div>
+
+            <!-- Stats Highlight Bar -->
+            <div class="hero-stats-strip">
+              <div class="hero-stat-box">
+                <span class="hero-stat-val">₹25Cr+</span>
+                <span class="hero-stat-label">Client Sales Driven</span>
+              </div>
+              <div style="width: 1px; height: 32px; background: var(--color-border);" class="desktop-only"></div>
+              <div class="hero-stat-box">
+                <span class="hero-stat-val">4.8x</span>
+                <span class="hero-stat-label">Average Meta ROAS</span>
+              </div>
+              <div style="width: 1px; height: 32px; background: var(--color-border);" class="desktop-only"></div>
+              <div class="hero-stat-box">
+                <span class="hero-stat-val">+38%</span>
+                <span class="hero-stat-label">Shopify CVR Lift</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Dashboard Mockup & Floating Badges -->
+          <div class="hero-right-col">
+            <div class="hero-visual-card-wrap">
+              <!-- Floating Badge: Top Left -->
+              <div class="hero-float-badge hero-float-badge-top">
+                <span class="pulsing-dot"></span>
+                <span>Live Meta ROAS: <strong>5.4x</strong></span>
+              </div>
+
+              <!-- Main Dashboard Graphic -->
+              <img src="assets/hero-shopify-meta-dashboard.jpg"
+                alt="Shopify & Meta Ads Real-Time Sales Growth Dashboard" class="hero-dashboard-img" loading="eager">
+
+              <!-- Floating Badge: Bottom Right -->
+              <div class="hero-float-badge hero-float-badge-bottom">
+                <i data-lucide="shopping-bag" style="color: var(--color-growth-green); width: 16px; height: 16px;"></i>
+                <span>Shopify Sales: <strong>+88.2% MoM</strong></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. TRUST / VALUE PROPOSITION STRIP
+         ======================================================================== -->
+    <section class="trust-strip" aria-label="Core Agency Value Pillars">
+      <div class="container">
+        <div class="trust-grid">
+
+          <div class="trust-item">
+            <div class="trust-icon-box">
+              <i data-lucide="zap"></i>
+            </div>
+            <div class="trust-item-text">
+              Performance-First Approach
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon-box">
+              <i data-lucide="code-2"></i>
+            </div>
+            <div class="trust-item-text">
+              Modern Web Development
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon-box">
+              <i data-lucide="line-chart"></i>
+            </div>
+            <div class="trust-item-text">
+              Data-Driven Optimization
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon-box">
+              <i data-lucide="crosshair"></i>
+            </div>
+            <div class="trust-item-text">
+              Conversion-Focused Strategy
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. FOUR MAIN SERVICE CARDS
+         User Requested Exact Services:
+         1. Performance Marketing
+         2. Web Development
+         3. Meta Ads & Google Ads
+         4. Landing Page & CRO
+         (With signature green indicator pill matching user reference)
+         ======================================================================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>CAPABILITIES & EXPERTISE</span>
+          </div>
+          <h2 class="section-title">
+            Everything You Need to Scale Your Brand.
+          </h2>
+          <p class="section-subtitle">
+            From attracting the right audience to converting more customers, we build growth systems designed around
+            your business goals.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Card 1: Performance Marketing (Compact) -->
+          <div class="service-card">
+            <div class="card-indicator-pill"></div>
+
+            <div class="service-card-icon-wrap">
+              <i data-lucide="trending-up" style="width: 22px; height: 22px;"></i>
+            </div>
+
+            <h3 class="service-card-title">Performance Marketing</h3>
+            <p class="service-card-desc">
+              Data-driven full-funnel acquisition engineered for high ROAS and sustainable scaling.
+            </p>
+
+            <div class="service-tags">
+              <span class="service-tag">Full-Funnel</span>
+              <span class="service-tag">Attribution</span>
+              <span class="service-tag">CAC Scale</span>
+            </div>
+
+            <a href="services/performance-marketing.html" class="service-card-cta">
+              Explore Service
+              <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+
+          <!-- Card 2: Web Development (Compact) -->
+          <div class="service-card">
+            <div class="card-indicator-pill"></div>
+
+            <div class="service-card-icon-wrap">
+              <i data-lucide="laptop" style="width: 22px; height: 22px;"></i>
+            </div>
+
+            <h3 class="service-card-title">Web Development</h3>
+            <p class="service-card-desc">
+              Lightning-fast modern web applications and headless e-com built for conversion velocity.
+            </p>
+
+            <div class="service-tags">
+              <span class="service-tag">Modern Web</span>
+              <span class="service-tag">Speed Vitals</span>
+              <span class="service-tag">Responsive</span>
+            </div>
+
+            <a href="services/web-development.html" class="service-card-cta">
+              Explore Service
+              <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+
+          <!-- Card 3: Meta Ads & Google Ads (Compact) -->
+          <div class="service-card">
+            <div class="card-indicator-pill"></div>
+
+            <div class="service-card-icon-wrap">
+              <i data-lucide="megaphone" style="width: 22px; height: 22px;"></i>
+            </div>
+
+            <h3 class="service-card-title">Meta Ads & Google Ads</h3>
+            <p class="service-card-desc">
+              High-converting paid media campaigns capturing search intent and social scale.
+            </p>
+
+            <div class="service-tags">
+              <span class="service-tag">Meta CAPI</span>
+              <span class="service-tag">Google PMax</span>
+              <span class="service-tag">Retargeting</span>
+            </div>
+
+            <a href="services/meta-google-ads.html" class="service-card-cta">
+              Explore Service
+              <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+
+          <!-- Card 4: Landing Page & CRO (Compact) -->
+          <div class="service-card">
+            <div class="card-indicator-pill"></div>
+
+            <div class="service-card-icon-wrap">
+              <i data-lucide="layout" style="width: 22px; height: 22px;"></i>
+            </div>
+
+            <h3 class="service-card-title">Landing Page & CRO</h3>
+            <p class="service-card-desc">
+              High-converting custom landing pages and iterative A/B testing that compound revenue.
+            </p>
+
+            <div class="service-tags">
+              <span class="service-tag">Custom Landers</span>
+              <span class="service-tag">A/B Testing</span>
+              <span class="service-tag">Checkout CRO</span>
+            </div>
+
+            <a href="services/landing-page-cro.html" class="service-card-cta">
+              Explore Service
+              <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. INTERACTIVE GROWTH SIMULATOR (Replaced "THE GROWTH ADVANTAGE")
+         ======================================================================== -->
+    <section class="section simulator-section" id="simulator">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>GROWTH SIMULATOR</span>
+          </div>
+
+          <h2 class="section-title">
+            See What Your Growth <span class="text-green">Could Look Like.</span>
+          </h2>
+
+          <p class="section-subtitle">
+            Adjust your current metrics below to simulate how our full-funnel system unlocks revenue and ROAS expansion.
+          </p>
+        </div>
+
+        <div class="simulator-card">
+
+          <!-- Left Column: Current Baseline Inputs -->
+          <div class="simulator-controls-col">
+            <div class="simulator-col-header">
+              <div class="simulator-col-badge">STEP 1: YOUR BASELINE</div>
+              <h3 class="simulator-col-title">Adjust Your Current Metrics</h3>
+              <p class="simulator-col-desc">Drag the sliders to match your existing paid media spend and performance
+                numbers.</p>
+            </div>
+
+            <div class="sim-controls-list">
+
+              <!-- Slider 1: Monthly Ad Spend (INR) -->
+              <div class="sim-control-group">
+                <div class="sim-label-row">
+                  <label for="simSpend" class="sim-label">
+                    <i data-lucide="wallet" class="sim-label-icon"></i>
+                    Monthly Ad Spend
+                  </label>
+                  <span class="sim-value-pill" id="simSpendVal">₹1,50,000</span>
+                </div>
+                <div class="sim-slider-wrap">
+                  <input type="range" id="simSpend" min="25000" max="2500000" step="25000" value="150000"
+                    class="sim-range-input">
+                </div>
+                <div class="sim-range-scale">
+                  <span>₹25,000</span>
+                  <span>₹10,00,000</span>
+                  <span>₹25,00,000+</span>
+                </div>
+              </div>
+
+              <!-- Slider 2: Current Monthly Revenue (Auto-calculates ROAS) -->
+              <div class="sim-control-group">
+                <div class="sim-label-row">
+                  <label for="simRevenue" class="sim-label">
+                    <i data-lucide="bar-chart-3" class="sim-label-icon"></i>
+                    Current Monthly Revenue
+                  </label>
+                  <span class="sim-value-pill" id="simRevenueVal">₹3,60,000</span>
+                </div>
+                <div class="sim-slider-wrap">
+                  <input type="range" id="simRevenue" min="50000" max="6000000" step="25000" value="360000"
+                    class="sim-range-input">
+                </div>
+                <div class="sim-range-scale">
+                  <span>₹50,000</span>
+                  <span>₹25,00,000</span>
+                  <span>₹60,00,000+</span>
+                </div>
+              </div>
+
+              <!-- Slider 3: Average Order Value (AOV in INR) -->
+              <div class="sim-control-group">
+                <div class="sim-label-row">
+                  <label for="simAov" class="sim-label">
+                    <i data-lucide="shopping-bag" class="sim-label-icon"></i>
+                    Average Order Value (AOV)
+                  </label>
+                  <span class="sim-value-pill" id="simAovVal">₹1,499</span>
+                </div>
+                <div class="sim-slider-wrap">
+                  <input type="range" id="simAov" min="499" max="15000" step="100" value="1499" class="sim-range-input">
+                </div>
+                <div class="sim-range-scale">
+                  <span>₹499</span>
+                  <span>₹5,000</span>
+                  <span>₹15,000+</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Baseline Summary Bar (Current ROAS is auto-calculated here) -->
+            <div class="sim-baseline-bar">
+              <div class="baseline-item">
+                <span class="baseline-item-label">Current ROAS (Auto):</span>
+                <span class="baseline-item-val" id="baselineRoasDisplay">2.4x</span>
+              </div>
+              <div class="baseline-divider"></div>
+              <div class="baseline-item">
+                <span class="baseline-item-label">Current Monthly Orders:</span>
+                <span class="baseline-item-val" id="baselineOrdersDisplay">~240</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Projected Growth Advantage -->
+          <div class="simulator-results-col">
+            <div class="results-top-header">
+              <div class="live-status-pill">
+                <span class="live-radar-dot"></span>
+                <span>STEP 2: SIMULATION ENGINE</span>
+              </div>
+              <div class="simulation-speed-tag">AI-Optimized Model</div>
+            </div>
+
+            <!-- Main Hero Projected Revenue Metric -->
+            <div class="sim-hero-metric-card">
+              <div class="sim-hero-label">Projected Monthly Revenue</div>
+              <div class="sim-hero-val-wrap">
+                <span class="sim-hero-val" id="projectedRevVal">₹6,00,000</span>
+                <span class="sim-hero-sub">/ month</span>
+              </div>
+              <div class="sim-hero-badge">
+                <i data-lucide="arrow-up-right"></i>
+                <span id="unlockedRevVal">+₹2,40,000</span>
+                <span class="badge-tag">New Unlocked Revenue / mo</span>
+              </div>
+            </div>
+
+            <!-- Comparison Metric Cards (ROAS & Orders) -->
+            <div class="sim-metrics-grid">
+              <!-- Metric 1: ROAS Lift -->
+              <div class="sim-mini-metric">
+                <div class="mini-metric-header">
+                  <span class="mini-metric-title">Projected ROAS</span>
+                  <span class="mini-lift-tag" id="roasLiftTag">+67% Lift</span>
+                </div>
+                <div class="mini-metric-value">
+                  <span class="val-before" id="roasBefore">2.4x</span>
+                  <span class="val-arrow">→</span>
+                  <span class="val-after" id="roasAfter">4.0x</span>
+                </div>
+                <div class="mini-metric-desc">Targeted creative angles & intent bidding</div>
+              </div>
+
+              <!-- Metric 2: Monthly Orders -->
+              <div class="sim-mini-metric">
+                <div class="mini-metric-header">
+                  <span class="mini-metric-title">Projected Orders</span>
+                  <span class="mini-lift-tag" id="ordersLiftTag">+45%</span>
+                </div>
+                <div class="mini-metric-value">
+                  <span class="val-before" id="ordersBefore">240</span>
+                  <span class="val-arrow">→</span>
+                  <span class="val-after" id="ordersAfter">348</span>
+                </div>
+                <div class="mini-metric-desc">Sub-second landers & checkout CRO</div>
+              </div>
+            </div>
+
+            <!-- Growth Levers Panel -->
+            <div class="sim-levers-panel">
+              <div class="levers-header">Active Growth Levers Applied:</div>
+              <div class="levers-list">
+                <div class="lever-item">
+                  <i data-lucide="check-circle-2" class="lever-icon"></i>
+                  <span><strong>Meta & Google CAPI:</strong> First-party server attribution captures lost
+                    conversions</span>
+                </div>
+                <div class="lever-item">
+                  <i data-lucide="check-circle-2" class="lever-icon"></i>
+                  <span><strong>CRO Velocity:</strong> Custom high-speed landing pages lower acquisition costs</span>
+                </div>
+                <div class="lever-item">
+                  <i data-lucide="check-circle-2" class="lever-icon"></i>
+                  <span><strong>Offer Optimization:</strong> Post-purchase upsell loops lift average order values</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Simulator Action Button -->
+            <div class="sim-cta-wrap">
+              <a href="contact.html" class="btn btn-primary sim-cta-btn">
+                <span>Unlock This Growth For Your Brand</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+              <p class="sim-disclaimer">
+                *Simulations based on audited 90-day averages across GrowthPilot partner accounts. Individual results
+                vary by niche and market fit.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Live Simulator Interactive Script (Zero-cache instant execution) -->
+      <script>
+        (function initGrowthSimulator() {
+          const spendInput = document.getElementById('simSpend');
+          const revenueInput = document.getElementById('simRevenue');
+          const aovInput = document.getElementById('simAov');
+
+          if (!spendInput || !revenueInput || !aovInput) return;
+
+          const spendVal = document.getElementById('simSpendVal');
+          const revenueVal = document.getElementById('simRevenueVal');
+          const aovVal = document.getElementById('simAovVal');
+          const baseRoasEl = document.getElementById('baselineRoasDisplay');
+          const baseOrdersEl = document.getElementById('baselineOrdersDisplay');
+
+          const projRevEl = document.getElementById('projectedRevVal');
+          const unlockedRevEl = document.getElementById('unlockedRevVal');
+          const roasBeforeEl = document.getElementById('roasBefore');
+          const roasAfterEl = document.getElementById('roasAfter');
+          const roasLiftEl = document.getElementById('roasLiftTag');
+          const ordersBeforeEl = document.getElementById('ordersBefore');
+          const ordersAfterEl = document.getElementById('ordersAfter');
+          const ordersLiftEl = document.getElementById('ordersLiftTag');
+
+          const fmtInr = (n) => '₹' + Math.round(n).toLocaleString('en-IN');
+          const fmtNum = (n) => Math.round(n).toLocaleString('en-IN');
+
+          function updateTrack(input) {
+            const min = parseFloat(input.min) || 0;
+            const max = parseFloat(input.max) || 100;
+            const val = parseFloat(input.value) || 0;
+            const pct = Math.max(0, Math.min(100, ((val - min) / (max - min)) * 100));
+            input.style.background = 'linear-gradient(to right, #00C853 0%, #00E676 ' + pct + '%, #E2E8F0 ' + pct + '%, #E2E8F0 100%)';
+          }
+
+          function recalculate() {
+            const spend = parseFloat(spendInput.value) || 150000;
+            const currentRev = parseFloat(revenueInput.value) || 360000;
+            const aov = parseFloat(aovInput.value) || 1499;
+
+            // Automatically Calculate Current ROAS
+            const currentRoas = parseFloat((currentRev / Math.max(1000, spend)).toFixed(2));
+
+            // Update badge displays
+            if (spendVal) spendVal.textContent = fmtInr(spend);
+            if (revenueVal) revenueVal.textContent = fmtInr(currentRev);
+            if (aovVal) aovVal.textContent = fmtInr(aov);
+
+            // Update range tracks
+            updateTrack(spendInput);
+            updateTrack(revenueInput);
+            updateTrack(aovInput);
+
+            // Update auto-calculated baseline ROAS and orders
+            const baseOrders = Math.round(currentRev / Math.max(1, aov));
+
+            if (baseRoasEl) baseRoasEl.textContent = currentRoas.toFixed(1) + 'x';
+            if (baseOrdersEl) baseOrdersEl.textContent = '~' + fmtNum(baseOrders);
+
+            // Full-funnel Growth multipliers
+            let roasMultiplier = 1.68;
+            if (currentRoas >= 3.5) roasMultiplier = 1.40;
+            else if (currentRoas >= 2.6) roasMultiplier = 1.52;
+
+            const projRoas = parseFloat((currentRoas * roasMultiplier).toFixed(1));
+            const projRev = Math.round(spend * projRoas);
+            const unlockedRev = Math.max(0, projRev - currentRev);
+
+            // AOV expansion (15% lift through CRO & post-purchase)
+            const projAov = Math.round(aov * 1.15);
+            const projOrders = Math.round(projRev / Math.max(1, projAov));
+
+            const roasLiftPct = Math.round(((projRoas - currentRoas) / Math.max(0.1, currentRoas)) * 100);
+            const ordersLiftPct = Math.round(((projOrders - baseOrders) / Math.max(1, baseOrders)) * 100);
+
+            // Update results UI
+            if (projRevEl) projRevEl.textContent = fmtInr(projRev);
+            if (unlockedRevEl) unlockedRevEl.textContent = '+' + fmtInr(unlockedRev);
+
+            if (roasBeforeEl) roasBeforeEl.textContent = currentRoas.toFixed(1) + 'x';
+            if (roasAfterEl) roasAfterEl.textContent = projRoas.toFixed(1) + 'x';
+            if (roasLiftEl) roasLiftEl.textContent = '+' + roasLiftPct + '% Lift';
+
+            if (ordersBeforeEl) ordersBeforeEl.textContent = fmtNum(baseOrders);
+            if (ordersAfterEl) ordersAfterEl.textContent = fmtNum(projOrders);
+            if (ordersLiftEl) ordersLiftEl.textContent = '+' + ordersLiftPct + '%';
+          }
+
+          // Listen to both input and change for instant response on all devices
+          ['input', 'change'].forEach((evt) => {
+            spendInput.addEventListener(evt, recalculate);
+            revenueInput.addEventListener(evt, recalculate);
+            aovInput.addEventListener(evt, recalculate);
+          });
+
+          // Run immediately
+          recalculate();
+        })();
+      </script>
+    </section>
+
+    <!-- ========================================================================
+         6. OUR PROCESS SECTION (HORIZONTAL TIMELINE)
+         ======================================================================== -->
+    <section class="section process-section" id="process">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>SYSTEMATIC METHODOLOGY</span>
+          </div>
+          <h2 class="section-title">
+            A Smarter Approach to Scaling.
+          </h2>
+          <p class="section-subtitle">
+            A battle-tested 4-step framework designed to eliminate waste and turn ad dollars and web development into
+            compounding revenue.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+
+          <!-- Step 01 -->
+          <div class="process-card">
+            <div class="process-step-num">01</div>
+            <h3 class="process-title">Discover</h3>
+            <p class="process-desc">
+              Understand your business, audience, goals, and current marketing performance to identify immediate growth
+              bottlenecks.
+            </p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="process-card">
+            <div class="process-step-num">02</div>
+            <h3 class="process-title">Strategize</h3>
+            <p class="process-desc">
+              Build a customized marketing plan with campaign structure, web architecture, and measurable growth
+              milestones.
+            </p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="process-card">
+            <div class="process-step-num">03</div>
+            <h3 class="process-title">Launch & Build</h3>
+            <p class="process-desc">
+              Deploy optimized campaigns, build high-converting landers, analyze user behavior, and test growth
+              opportunities.
+            </p>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="process-card">
+            <div class="process-step-num">04</div>
+            <h3 class="process-title">Optimize & Scale</h3>
+            <p class="process-desc">
+              Use telemetry insights to improve conversion efficiency, lower acquisition costs, and aggressively scale
+              what works.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. RESULTS-ORIENTED SECTION
+         ======================================================================== -->
+    <section class="section results-section" id="results">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>IMPACT & METRICS</span>
+          </div>
+          <h2 class="section-title">
+            Growth Should Be Measurable.
+          </h2>
+          <p class="section-subtitle">
+            We focus on real commercial business outcomes, unit economics, and cash-flow efficiency — not vanity
+            metrics.
+          </p>
+        </div>
+
+        <div class="results-grid">
+
+          <!-- CAC -->
+          <div class="result-card">
+            <div class="result-icon">
+              <i data-lucide="user-minus"></i>
+            </div>
+            <h3 class="result-metric-name">Customer Acquisition Cost</h3>
+            <p class="result-desc">
+              Lowering CAC through higher creative resonance, predictive audience exclusions, and higher landing page
+              efficiency.
+            </p>
+            <div class="result-sparkline">
+              <span style="font-size: 0.8rem; color: var(--color-muted);">Focus</span>
+              <span class="result-badge">Efficiency Target</span>
+            </div>
+          </div>
+
+          <!-- ROAS -->
+          <div class="result-card">
+            <div class="result-icon">
+              <i data-lucide="trending-up"></i>
+            </div>
+            <h3 class="result-metric-name">Return on Ad Spend</h3>
+            <p class="result-desc">
+              Maximizing ROAS through systematic creative testing, cross-channel retargeting, and high average order
+              value bundling.
+            </p>
+            <div class="result-sparkline">
+              <span style="font-size: 0.8rem; color: var(--color-muted);">Focus</span>
+              <span class="result-badge">Capital Multiplier</span>
+            </div>
+          </div>
+
+          <!-- CVR -->
+          <div class="result-card">
+            <div class="result-icon">
+              <i data-lucide="mouse-pointer-click"></i>
+            </div>
+            <h3 class="result-metric-name">Conversion Rate</h3>
+            <p class="result-desc">
+              Elevating on-site conversion with friction-free mobile checkouts, custom landers, and iterative page
+              optimization.
+            </p>
+            <div class="result-sparkline">
+              <span style="font-size: 0.8rem; color: var(--color-muted);">Focus</span>
+              <span class="result-badge">Funnel CRO</span>
+            </div>
+          </div>
+
+          <!-- Revenue Growth -->
+          <div class="result-card">
+            <div class="result-icon">
+              <i data-lucide="dollar-sign"></i>
+            </div>
+            <h3 class="result-metric-name">Revenue Growth</h3>
+            <p class="result-desc">
+              Scaling top-line revenue sustainably while preserving net margin, cash cycle health, and long-term
+              customer lifetime value.
+            </p>
+            <div class="result-sparkline">
+              <span style="font-size: 0.8rem; color: var(--color-muted);">Focus</span>
+              <span class="result-badge">Sustainable Scale</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         8. INDUSTRIES WE SERVE
+         ======================================================================== -->
+    <section class="section industries-section" id="industries">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>DOMAIN FOCUS</span>
+          </div>
+          <h2 class="section-title">
+            Industries We Serve.
+          </h2>
+          <p class="section-subtitle">
+            Tailored performance frameworks built for high-growth direct-to-consumer and modern digital brands.
+          </p>
+        </div>
+
+        <div class="industries-grid">
+
+          <div class="industry-card">
+            <div class="industry-icon-wrap">
+              <i data-lucide="shopping-bag"></i>
+            </div>
+            <div class="industry-name">D2C & E-commerce</div>
+            <div class="industry-sub">High-velocity online retail</div>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon-wrap">
+              <i data-lucide="shirt"></i>
+            </div>
+            <div class="industry-name">Fashion & Lifestyle</div>
+            <div class="industry-sub">Visual storytelling & apparel</div>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon-wrap">
+              <i data-lucide="sparkle"></i>
+            </div>
+            <div class="industry-name">Beauty & Personal Care</div>
+            <div class="industry-sub">Skincare, cosmetics, wellness</div>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon-wrap">
+              <i data-lucide="home"></i>
+            </div>
+            <div class="industry-name">Home & Living</div>
+            <div class="industry-sub">Design, furniture, essentials</div>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon-wrap">
+              <i data-lucide="box"></i>
+            </div>
+            <div class="industry-name">Consumer Brands</div>
+            <div class="industry-sub">Omnichannel product brands</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         8.5 OUR JOURNEY SECTION (TIMELINE ROADMAP)
+         ======================================================================== -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>GROWTH ROADMAP</span>
+          </div>
+          <h2 class="section-title">
+            Our <span class="text-green">Journey</span>
+          </h2>
+          <p class="section-subtitle">
+            Explore our journey from initial planning to final launch. Each step reflects our commitment to quality and
+            innovation.
+          </p>
+        </div>
+
+        <!-- Horizontal Alternating Journey Roadmap -->
+        <div class="journey-roadmap-wrap">
+          <div class="journey-timeline-axis"></div>
+
+          <div class="journey-grid">
+
+            <!-- Step 1: Planning (Top Label, Bottom Image) -->
+            <div class="journey-step-col step-top-label">
+              <div class="journey-slot-top">
+                <div class="journey-label-box">
+                  <span class="journey-step-title">Planning</span>
+                  <div class="journey-stem-up">
+                    <span class="journey-stem-dot"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="journey-node-wrap">
+                <div class="journey-node-badge node-1">1</div>
+              </div>
+
+              <div class="journey-slot-bottom">
+                <div class="journey-branch-down">
+                  <div class="journey-thumb-box">
+                    <img src="assets/journey-1-planning.jpg" alt="Planning & Strategy" class="journey-thumb-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Website Development (Top Image, Bottom Label) -->
+            <div class="journey-step-col step-bottom-label">
+              <div class="journey-slot-top">
+                <div class="journey-branch-up">
+                  <div class="journey-thumb-box">
+                    <img src="assets/journey-2-webdev.jpg" alt="Website Development" class="journey-thumb-img">
+                  </div>
+                </div>
+              </div>
+
+              <div class="journey-node-wrap">
+                <div class="journey-node-badge node-2">2</div>
+              </div>
+
+              <div class="journey-slot-bottom">
+                <div class="journey-label-box">
+                  <div class="journey-stem-down">
+                    <span class="journey-stem-dot"></span>
+                  </div>
+                  <span class="journey-step-title">Website Development</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Social Media (Top Label, Bottom Image) -->
+            <div class="journey-step-col step-top-label">
+              <div class="journey-slot-top">
+                <div class="journey-label-box">
+                  <span class="journey-step-title">Social Media</span>
+                  <div class="journey-stem-up">
+                    <span class="journey-stem-dot"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="journey-node-wrap">
+                <div class="journey-node-badge node-3">3</div>
+              </div>
+
+              <div class="journey-slot-bottom">
+                <div class="journey-branch-down">
+                  <div class="journey-thumb-box">
+                    <img src="assets/journey-3-social.jpg" alt="Social Media Campaigns" class="journey-thumb-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4: Performance Marketing (Top Image, Bottom Label) -->
+            <div class="journey-step-col step-bottom-label">
+              <div class="journey-slot-top">
+                <div class="journey-branch-up">
+                  <div class="journey-thumb-box">
+                    <img src="assets/journey-4-performance.jpg" alt="Performance Marketing" class="journey-thumb-img">
+                  </div>
+                </div>
+              </div>
+
+              <div class="journey-node-wrap">
+                <div class="journey-node-badge node-4">4</div>
+              </div>
+
+              <div class="journey-slot-bottom">
+                <div class="journey-label-box">
+                  <div class="journey-stem-down">
+                    <span class="journey-stem-dot"></span>
+                  </div>
+                  <span class="journey-step-title">Performance Marketing</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 5: Partnership Growth (Top Label, Bottom Image) -->
+            <div class="journey-step-col step-top-label">
+              <div class="journey-slot-top">
+                <div class="journey-label-box">
+                  <span class="journey-step-title">Partnership Growth</span>
+                  <div class="journey-stem-up">
+                    <span class="journey-stem-dot"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="journey-node-wrap">
+                <div class="journey-node-badge node-5">5</div>
+              </div>
+
+              <div class="journey-slot-bottom">
+                <div class="journey-branch-down">
+                  <div class="journey-thumb-box">
+                    <img src="assets/journey-5-partnership.jpg" alt="Partnership Growth" class="journey-thumb-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         9. FAQ SECTION
+         ======================================================================== -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>FREQUENT QUESTIONS</span>
+          </div>
+          <h2 class="section-title">
+            Frequently Asked Questions.
+          </h2>
+          <p class="section-subtitle">
+            Everything you need to know about partnering with GrowthPilot to scale your brand.
+          </p>
+        </div>
+
+        <div class="faq-list">
+
+          <!-- Q1 -->
+          <div class="faq-item active">
+            <button class="faq-question-btn" type="button" aria-expanded="true">
+              <span>What does GrowthPilot do?</span>
+              <span class="faq-icon"><i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i></span>
+            </button>
+            <div class="faq-answer">
+              GrowthPilot is a modern performance agency offering end-to-end growth solutions: Performance Marketing,
+              Web Development, Meta Ads & Google Ads scaling, and custom Landing Page & CRO optimization. We build
+              systems that drive profitable customer acquisition.
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button" aria-expanded="false">
+              <span>Which advertising platforms do you specialize in?</span>
+              <span class="faq-icon"><i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i></span>
+            </button>
+            <div class="faq-answer">
+              We specialize primarily in Meta Ads (Facebook & Instagram) and Google Ads (Search, Shopping, and
+              Performance Max). We connect these with high-converting custom landing pages and server-side tracking
+              infrastructure.
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button" aria-expanded="false">
+              <span>Do you build custom websites and landing pages?</span>
+              <span class="faq-icon"><i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i></span>
+            </button>
+            <div class="faq-answer">
+              Yes, our Web Development and Landing Page CRO services build modern, responsive, ultra-fast web pages
+              engineered specifically for high conversion rates and optimal user experience.
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button" aria-expanded="false">
+              <span>How do you measure campaign performance?</span>
+              <span class="faq-icon"><i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i></span>
+            </button>
+            <div class="faq-answer">
+              We focus on true commercial metrics: Customer Acquisition Cost (CAC), Return on Ad Spend (ROAS),
+              Conversion Rate (CVR), and Lifetime Value (LTV), backed by server-side tracking rather than vanity clicks.
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button" aria-expanded="false">
+              <span>How can we get started with GrowthPilot?</span>
+              <span class="faq-icon"><i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i></span>
+            </button>
+            <div class="faq-answer">
+              Simply fill out the contact form below with details on your brand, desired services, and monthly
+              advertising budget. We review every submission within 24 business hours to schedule an introductory growth
+              audit.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         10. FINAL HIGH-IMPACT CTA SECTION
+         ======================================================================== -->
+    <section class="final-cta-section" id="final-cta">
+      <div class="cta-glow-mesh"></div>
+      <div class="container">
+        <div class="final-cta-box">
+
+          <div class="eyebrow-pill" style="margin-bottom: 20px;">
+            <span class="pulsing-dot"></span>
+            <span>LET'S BUILD TOGETHER</span>
+          </div>
+
+          <h2 class="final-cta-title">
+            Ready to Put Your Brand Into <br><span class="text-green">Growth Mode?</span>
+          </h2>
+
+          <p class="final-cta-desc">
+            Let's build a performance marketing strategy designed around your business, your customers, and your next
+            stage of growth.
+          </p>
+
+          <div class="final-cta-actions">
+            <a href="contact.html" class="btn btn-primary">
+              Let's Talk Growth
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#services" class="btn btn-secondary">
+              Explore Our Services
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       12. FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="#hero">
+            <img src="assets/logo-full-brand.png" alt="GrowthPilot Logo"
+              style="height: 42px; width: auto; max-width: 200px; object-fit: contain;">
+          </a>
+          <p class="footer-tagline">
+            Performance Marketing That Scales. Engineering sustainable growth systems for modern digital brands.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="services/performance-marketing.html" class="footer-link">Services</a></li>
+            <li><a href="case-studies.html" class="footer-link">Case Studies</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links-list">
+            <li><a href="services/performance-marketing.html" class="footer-link">Performance Marketing</a></li>
+            <li><a href="services/web-development.html" class="footer-link">Web Development</a></li>
+            <li><a href="services/meta-google-ads.html" class="footer-link">Meta Ads & Google Ads</a></li>
+            <li><a href="services/landing-page-cro.html" class="footer-link">Landing Page & CRO</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Inquiries -->
+        <div>
+          <div class="footer-col-title">Contact & Inquiries</div>
+          <ul class="footer-links-list">
+            <li class="footer-link">hello@growthpilot.agency</li>
+            <li class="footer-link">Mon – Fri: 9am – 6pm EST</li>
+            <li><a href="contact.html" class="footer-link text-green" style="font-weight: 700;">Schedule Growth Audit
+                →</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          © <span id="currentYear"></span> GrowthPilot. All rights reserved. Performance Marketing Agency.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#" id="privacyPolicyBtn">Privacy Policy</a>
+          <a href="#" id="termsBtn">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Legal (Privacy & Terms) -->
+  <div class="modal-overlay" id="legalModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+      <h3 id="modalTitle" style="color: var(--color-text-primary); font-size: 1.5rem; margin-bottom: 16px;">Privacy
+        Policy</h3>
+      <div id="modalBody" style="color: var(--color-text-secondary); font-size: 0.92rem; line-height: 1.7;">
+        <!-- Filled dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js?v=20261009"></script>
+</body>
+
+</html>

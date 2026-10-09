@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta Ads & Google Ads — GrowthPilot</title>
+  <meta name="description" content="Scale paid media campaigns across Meta Ads (Facebook & Instagram) and Google Ads (Search, Shopping, Performance Max).">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" type="image/png" href="../assets/logo-icon-transparent.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header" id="navbar">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="../index.html" class="navbar-brand" aria-label="GrowthPilot Home">
+          <img src="../assets/logo-full-brand.png" alt="GrowthPilot Logo" class="navbar-logo-full">
+        </a>
+
+        <ul class="navbar-links">
+          <li class="nav-item-dropdown" id="servicesDropdown">
+            <a href="meta-google-ads.html" class="navbar-link active" id="servicesDropdownBtn">
+              <span>Services</span>
+              <i data-lucide="chevron-down" class="dropdown-chevron"></i>
+            </a>
+
+            <!-- Mega Menu -->
+            <div class="mega-menu" aria-label="Services Mega Menu">
+              <div class="mega-menu-inner">
+                <div class="mega-menu-services-grid">
+
+                  <a href="performance-marketing.html" class="mega-service-item">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="trending-up" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title">Performance Marketing</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">Scale</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                  <a href="web-development.html" class="mega-service-item">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="laptop" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title">Web Development</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">High Speed</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                  <a href="meta-google-ads.html" class="mega-service-item" style="border-color: rgba(0, 200, 83, 0.4); background: #FAFCFB;">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="megaphone" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title text-green">Meta & Google Ads</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">Paid Media</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                  <a href="landing-page-cro.html" class="mega-service-item">
+                    <div class="mega-service-left">
+                      <div class="mega-icon-box">
+                        <i data-lucide="layout" style="width: 18px; height: 18px;"></i>
+                      </div>
+                      <span class="mega-service-title">Landing Page & CRO</span>
+                    </div>
+                    <div class="mega-service-right">
+                      <span class="mega-tag">Conversion</span>
+                      <i data-lucide="arrow-right" class="mega-service-arrow"></i>
+                    </div>
+                  </a>
+
+                </div>
+
+                <!-- Mega Menu Featured Panel (Restored as requested) -->
+                <div class="mega-menu-featured">
+                  <div>
+                    <span class="mega-featured-badge">Paid Media Strategy</span>
+                    <h4 class="mega-featured-title">Free Ad Account Audit</h4>
+                    <p class="mega-featured-desc">
+                      Find wasted ad spend in your Meta & Google ad structures.
+                    </p>
+                  </div>
+                  <a href="../contact.html" class="btn btn-primary btn-sm"
+                    style="width: 100%; font-size: 0.82rem; padding: 10px; justify-content: center;">
+                    Claim Free Audit →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="../case-studies.html" class="navbar-link">Case Studies</a></li>
+          <li><a href="../about.html" class="navbar-link">About</a></li>
+          <li><a href="../contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+
+        <div class="navbar-cta-wrapper">
+          <a href="../contact.html" class="btn btn-primary btn-sm">
+            Let's Scale Your Brand
+            <i data-lucide="arrow-right" class="icon-inline"></i>
+          </a>
+          <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu">
+            <i data-lucide="menu" id="navIcon"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+      <div style="border-bottom: 1px solid var(--color-border-subtle); padding-bottom: 8px;">
+        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-muted); text-transform: uppercase; margin-bottom: 8px;">Services</div>
+        <div style="display: flex; flex-direction: column; gap: 8px; padding-left: 10px;">
+          <a href="performance-marketing.html" class="mobile-nav-link" style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Performance Marketing</a>
+          <a href="web-development.html" class="mobile-nav-link" style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Web Development</a>
+          <a href="meta-google-ads.html" class="mobile-nav-link text-green" style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Meta Ads & Google Ads</a>
+          <a href="landing-page-cro.html" class="mobile-nav-link" style="font-size: 0.92rem; border-bottom: none; padding: 4px 0;">• Landing Page & CRO</a>
+        </div>
+      </div>
+      <a href="../case-studies.html" class="mobile-nav-link">Case Studies</a>
+      <a href="../about.html" class="mobile-nav-link">About</a>
+      <a href="../contact.html" class="mobile-nav-link">Contact</a>
+      <a href="../contact.html" class="btn btn-primary" style="margin-top: 12px; width: 100%;">Let's Scale Your Brand →</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- SUBPAGE HERO (CENTERED) -->
+    <section class="subpage-hero">
+      <div class="container">
+        <div class="breadcrumb-nav">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="../index.html#services">Services</a>
+          <span>/</span>
+          <span style="color: var(--color-text-primary); font-weight: 600;">Meta Ads & Google Ads</span>
+        </div>
+
+        <div class="subpage-hero-centered">
+          <div class="eyebrow-pill" style="margin: 0 auto 16px auto;">
+            <span class="pulsing-dot"></span>
+            <span>PAID MEDIA EXCELLENCE</span>
+          </div>
+
+          <h1 class="section-title" style="margin-bottom: 16px; max-width: 840px;">
+            High-Converting <span class="text-green">Meta Ads & Google Ads</span> Built for Scale.
+          </h1>
+
+          <p class="section-subtitle" style="margin: 0 auto 26px auto; max-width: 740px;">
+            Capture high-intent buyers searching on Google and trigger impulse buying on Meta. We run rigorous creative testing matrices, lossless CAPI telemetry, and automated bidding algorithms that maximize ROAS while protecting unit profit margins.
+          </p>
+
+          <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+            <a href="../contact.html" class="btn btn-primary">
+              Audit Your Ad Account
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#capabilities" class="btn btn-secondary">
+              Explore Capabilities ↓
+            </a>
+          </div>
+
+          <!-- Centered Benchmark Stats Bar -->
+          <div class="service-hero-benchmark-bar">
+            <div class="benchmark-stat-item">
+              <span class="benchmark-stat-val">5.2x</span>
+              <span class="benchmark-stat-label">Google Search ROAS</span>
+            </div>
+            <div style="width: 1px; height: 32px; background: var(--color-border);" class="desktop-only"></div>
+            <div class="benchmark-stat-item">
+              <span class="benchmark-stat-val">4.4x</span>
+              <span class="benchmark-stat-label">Meta Scaling ROAS</span>
+            </div>
+            <div style="width: 1px; height: 32px; background: var(--color-border);" class="desktop-only"></div>
+            <div class="benchmark-stat-item">
+              <span class="benchmark-stat-val">-32%</span>
+              <span class="benchmark-stat-label">Blended CAC Lift</span>
+            </div>
+            <div style="width: 1px; height: 32px; background: var(--color-border);" class="desktop-only"></div>
+            <div class="benchmark-stat-item">
+              <span class="benchmark-stat-val">₹8Cr+</span>
+              <span class="benchmark-stat-label">Profitable Spend Run</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. CAPABILITIES SECTION (CENTERED) -->
+    <section class="section" id="capabilities" style="background: #FFFFFF;">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>WHAT WE EXECUTE</span>
+          </div>
+          <h2 class="section-title">The Complete Paid Acquisition Playbook</h2>
+          <p class="section-subtitle">How we scale Meta and Google ad accounts systematically with scientific rigor.</p>
+        </div>
+
+        <div class="capabilities-grid-3">
+          <!-- Card 1 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="search"></i></div>
+            <h3 class="capability-title">Google Search & PMax Mastery</h3>
+            <p class="capability-desc">Capturing high-intent search queries with structured negative match trees, custom Performance Max asset groups, and high-margin product catalog prioritization.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="instagram"></i></div>
+            <h3 class="capability-title">Meta Algorithmic Social Scaling</h3>
+            <p class="capability-desc">Broad targeting structures, Advantage+ Shopping Campaigns (ASC), and dynamic creative testing frameworks engineered to unlock maximum algorithmic delivery.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="repeat"></i></div>
+            <h3 class="capability-title">Cross-Channel Retargeting</h3>
+            <p class="capability-desc">Dynamic Product Ads (DPA) synced with Google YouTube bumper ads and Display network to re-engage cart abandoners and high-value prospective buyers.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="sparkles"></i></div>
+            <h3 class="capability-title">Creative Angle & UGC Matrix</h3>
+            <p class="capability-desc">Systematic weekly creation of 10+ visual hooks, angles, and formats (unboxing, problem-solution, founder story) to conquer ad fatigue before it hits your blended ROAS.</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="database"></i></div>
+            <h3 class="capability-title">Lossless CAPI & Server Telemetry</h3>
+            <p class="capability-desc">Implementation of direct Meta Conversions API (CAPI) and Google Ads Enhanced Conversions to recover lost iOS signals and achieve 8.5+/10 event quality match scores.</p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="capability-card centered">
+            <div class="service-card-icon-wrap"><i data-lucide="sliders"></i></div>
+            <h3 class="capability-title">Automated Bidding & Budget Scaling</h3>
+            <p class="capability-desc">Algorithmic cost-caps, minimum ROAS floor rules, and dayparting schedules designed to scale winners vertically while instantly trimming underperforming spend.</p>
+          </div>
+        </div>
+
+        <!-- Tech Stack Strip -->
+        <div class="tech-stack-strip">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-text-primary);">Paid Tech Stack:</span>
+          <span class="tech-badge">Meta Ads Manager</span>
+          <span class="tech-badge">Google Ads PMax</span>
+          <span class="tech-badge">YouTube Ads</span>
+          <span class="tech-badge">Google Merchant Center</span>
+          <span class="tech-badge">Meta Conversions API</span>
+          <span class="tech-badge">Triple Whale</span>
+          <span class="tech-badge">TikTok Ads</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 4-STEP EXECUTION FRAMEWORK (CENTERED) -->
+    <section class="section" style="background: #FAFCFB; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>OUR METHODOLOGY</span>
+          </div>
+          <h2 class="section-title">The 4-Step Media Scaling Architecture</h2>
+          <p class="section-subtitle">How we transform volatile ad campaigns into compounding, predictable customer acquisition engines.</p>
+        </div>
+
+        <div class="service-framework-grid">
+          <div class="framework-card">
+            <span class="framework-step-num">PHASE 01</span>
+            <h3 class="framework-title">Ad Account Health Audit</h3>
+            <p class="framework-desc">We dissect past auction overlap, search term wastage, pixel match quality, and historical creative burn rates to pinpoint immediate spend efficiencies.</p>
+          </div>
+
+          <div class="framework-card">
+            <span class="framework-step-num">PHASE 02</span>
+            <h3 class="framework-title">Feed & Tracking Fortification</h3>
+            <p class="framework-desc">We clean Google Merchant Center product attributes and deploy server-side CAPI tracking so algorithms receive untruncated conversion data.</p>
+          </div>
+
+          <div class="framework-card">
+            <span class="framework-step-num">PHASE 03</span>
+            <h3 class="framework-title">Creative Angle Sprints</h3>
+            <p class="framework-desc">We launch isolated dynamic creative testing (DCT) environments, testing fresh hooks, UGC angles, and offer variations weekly to identify runaway winners.</p>
+          </div>
+
+          <div class="framework-card">
+            <span class="framework-step-num">PHASE 04</span>
+            <h3 class="framework-title">Profitable Budget Scale</h3>
+            <p class="framework-desc">We scale verified winners using bid caps and automated guardrail rules to increase monthly ad spend without degrading blended customer acquisition cost.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COMPARISON SECTION (CENTERED) -->
+    <section class="section" style="background: #FFFFFF;">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>WHY CHOOSE US</span>
+          </div>
+          <h2 class="section-title">How Our Media Buying Compares</h2>
+          <p class="section-subtitle">Why ambitious brands trust our dedicated performance media partnership over traditional options.</p>
+        </div>
+
+        <div class="service-comparison-grid">
+          <!-- Traditional Agency -->
+          <div class="comparison-card">
+            <span class="comparison-tag" style="color: var(--color-muted); background: #F1F5F4;">TRADITIONAL AGENCY</span>
+            <h3 class="comparison-title">Standard Agency</h3>
+            <p class="comparison-desc">Junior media buyers relying on outdated interest targeting and passive monthly reports.</p>
+            <ul class="comparison-list">
+              <li class="comparison-item cross"><i data-lucide="x"></i> Basic interest targeting without DCT framework</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Slow turnaround on new creative assets (1-2/month)</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Relies on in-platform inflated ROAS metrics</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Rigid annual retainers with slow communication</li>
+            </ul>
+          </div>
+
+          <!-- GrowthPilot (Highlighted) -->
+          <div class="comparison-card highlight">
+            <span class="comparison-tag">RECOMMENDED PARTNERSHIP</span>
+            <h3 class="comparison-title">GrowthPilot Paid Media</h3>
+            <p class="comparison-desc">Senior media buyers combining broad algorithmic scaling, weekly UGC sprints, and server telemetry.</p>
+            <ul class="comparison-list">
+              <li class="comparison-item check"><i data-lucide="check"></i> Algorithmic Broad & Advantage+ Campaign Mastery</li>
+              <li class="comparison-item check"><i data-lucide="check"></i> Weekly 8-12 Fresh Hook & UGC Angle Sprints</li>
+              <li class="comparison-item check"><i data-lucide="check"></i> Server-Side Meta CAPI & Enhanced Conversions</li>
+              <li class="comparison-item check"><i data-lucide="check"></i> Blended Marketing Efficiency Ratio (MER) Focus</li>
+              <li class="comparison-item check"><i data-lucide="check"></i> Direct Slack / WhatsApp Access to Senior Buyers</li>
+            </ul>
+          </div>
+
+          <!-- In-House Solo Hire -->
+          <div class="comparison-card">
+            <span class="comparison-tag" style="color: var(--color-muted); background: #F1F5F4;">INTERNAL HIRING</span>
+            <h3 class="comparison-title">In-House Solo Buyer</h3>
+            <p class="comparison-desc">A single internal team member stretched thin across ad operations, copywriting, and design.</p>
+            <ul class="comparison-list">
+              <li class="comparison-item cross"><i data-lucide="x"></i> Overwhelmed juggling copy, video edits, and bids</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Lacks multi-account benchmark and algorithm insights</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> High fixed salary, recruitment & tooling costs</li>
+              <li class="comparison-item cross"><i data-lucide="x"></i> Single point of failure if they resign</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SERVICE FAQ SECTION (CENTERED) -->
+    <section class="section" style="background: #FAFCFB; border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="pulsing-dot"></span>
+            <span>FREQUENTLY ASKED QUESTIONS</span>
+          </div>
+          <h2 class="section-title">Meta & Google Ads FAQs</h2>
+          <p class="section-subtitle">Clear answers to common questions about our media buying and scaling methodology.</p>
+        </div>
+
+        <div class="service-faq-wrap">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>How do you allocate budget between Meta and Google Ads?</span>
+              <i data-lucide="chevron-down" class="faq-chevron"></i>
+            </button>
+            <div class="faq-answer-panel">
+              <p>We balance demand capture and demand creation. Google captures existing high-intent search demand (users actively searching for your product or related search terms), while Meta unlocks scalable cold audience discovery through viral hooks and algorithmic feed distribution. We continuously rebalance budget based on blended Marketing Efficiency Ratio (MER) and inventory velocity.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>What is your weekly creative testing cadence?</span>
+              <i data-lucide="chevron-down" class="faq-chevron"></i>
+            </button>
+            <div class="faq-answer-panel">
+              <p>Creative fatigue is the single biggest threat to paid media profitability. We test between 8 to 14 new creative assets every week across diverse angles (direct response problem-solution, unboxing, user testimonials, founder story, and comparison charts) inside dedicated dynamic creative testing (DCT) sandbox campaigns.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>How do you solve iOS privacy and attribution tracking drops?</span>
+              <i data-lucide="chevron-down" class="faq-chevron"></i>
+            </button>
+            <div class="faq-answer-panel">
+              <p>We implement direct server-to-server tracking via Meta Conversions API (CAPI) and Google Ads Enhanced Conversions through cloud gateway servers. This restores high Event Quality Match (EQM) ratings (8.5+/10), feeding the ad algorithms complete conversion telemetry to optimize bidding accurately.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>What is the minimum recommended monthly ad spend?</span>
+              <i data-lucide="chevron-down" class="faq-chevron"></i>
+            </button>
+            <div class="faq-answer-panel">
+              <p>We typically recommend a minimum monthly media budget of ₹2,00,000 to ₹5,00,000 ($2,500 - $6,000+) across Meta and Google. This budget ensures enough daily conversion events to reach algorithmic statistical significance rapidly during creative and audience testing phases.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA (CENTERED) -->
+    <section class="final-cta-section" style="border-top: 1px solid var(--color-border);">
+      <div class="cta-glow-mesh"></div>
+      <div class="container">
+        <div class="final-cta-box">
+          <div class="eyebrow-pill" style="margin-bottom: 20px;">
+            <span class="pulsing-dot"></span>
+            <span>GET IN TOUCH</span>
+          </div>
+          <h2 class="final-cta-title">Ready to Scale Your Paid Media Campaigns?</h2>
+          <p class="final-cta-desc">Let our media buyers inspect your accounts and build your next stage of scaling.</p>
+          <div class="final-cta-actions">
+            <a href="../contact.html" class="btn btn-primary">Book Paid Media Audit <i data-lucide="arrow-right"></i></a>
+            <a href="landing-page-cro.html" class="btn btn-secondary">Next: Landing Page & CRO →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="../index.html">
+            <img src="../assets/logo-full-brand.png" alt="GrowthPilot Logo" style="height: 42px; width: auto; max-width: 200px; object-fit: contain;">
+          </a>
+          <p class="footer-tagline">
+            Performance Marketing That Scales. Engineering sustainable growth systems for modern digital brands.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="performance-marketing.html" class="footer-link">Services</a></li>
+            <li><a href="../case-studies.html" class="footer-link">Case Studies</a></li>
+            <li><a href="../about.html" class="footer-link">About</a></li>
+            <li><a href="../contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links-list">
+            <li><a href="performance-marketing.html" class="footer-link">Performance Marketing</a></li>
+            <li><a href="web-development.html" class="footer-link">Web Development</a></li>
+            <li><a href="meta-google-ads.html" class="footer-link">Meta Ads & Google Ads</a></li>
+            <li><a href="landing-page-cro.html" class="footer-link">Landing Page & CRO</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Inquiries -->
+        <div>
+          <div class="footer-col-title">Contact & Inquiries</div>
+          <ul class="footer-links-list">
+            <li class="footer-link">hello@growthpilot.agency</li>
+            <li class="footer-link">Mon – Fri: 9am – 6pm EST</li>
+            <li><a href="../contact.html" class="footer-link text-green" style="font-weight: 700;">Schedule Growth Audit →</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          © <span id="currentYear"></span> GrowthPilot. All rights reserved. Performance Marketing Agency.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#" id="privacyPolicyBtn">Privacy Policy</a>
+          <a href="#" id="termsBtn">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Legal (Privacy & Terms) -->
+  <div class="modal-overlay" id="legalModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+      <h3 id="modalTitle" style="color: var(--color-text-primary); font-size: 1.5rem; margin-bottom: 16px;">Privacy Policy</h3>
+      <div id="modalBody" style="color: var(--color-text-secondary); font-size: 0.92rem; line-height: 1.7;">
+        <!-- Filled dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <script src="../app.js"></script>
+</body>
+</html>
