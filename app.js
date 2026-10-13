@@ -1,10 +1,6 @@
-/**
- * GrowthPilot — Interactive Functionality & UX Behaviors
- * Performance Marketing Agency
- */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Initialize Lucide Icons with bold premium stroke
+
   if (window.lucide) {
     lucide.createIcons({
       attrs: {
@@ -13,13 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Dynamic Copyright Year
   const yearEl = document.getElementById('currentYear');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  // 3. Sticky Navbar Blur & Shadow on Scroll
   const navbar = document.getElementById('navbar');
   const handleScroll = () => {
     if (window.scrollY > 20) {
@@ -31,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
 
-  // 4. Mobile Navigation Menu Toggle
   const mobileToggle = document.getElementById('mobileNavToggle');
   const mobileMenu = document.getElementById('mobileNavMenu');
   const navIcon = document.getElementById('navIcon');
@@ -48,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (window.lucide) lucide.createIcons();
     });
 
-    // Close mobile menu on clicking any link
     const mobileLinks = mobileMenu.querySelectorAll('a');
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
@@ -60,22 +52,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4b. Mega Menu Dropdown Click / Touch Support
   const servicesDropdown = document.getElementById('servicesDropdown');
   const servicesDropdownBtn = document.getElementById('servicesDropdownBtn');
 
   if (servicesDropdown && servicesDropdownBtn) {
-    // On click or touch
+
     servicesDropdownBtn.addEventListener('click', (e) => {
-      // If clicking directly on desktop without navigation
+
       if (window.innerWidth > 991) {
-        // Allow hover on desktop, or click to toggle
+
         const isOpen = servicesDropdown.classList.toggle('open');
         servicesDropdownBtn.setAttribute('aria-expanded', isOpen);
       }
     });
 
-    // Close when clicking outside
     document.addEventListener('click', (e) => {
       if (!servicesDropdown.contains(e.target)) {
         servicesDropdown.classList.remove('open');
@@ -84,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 5. Active Navbar Link on Scroll (Intersection Observer)
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.navbar-link');
 
@@ -111,7 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach(sec => sectionObserver.observe(sec));
 
-  // 6. Service Card CTA Clicks Auto-Select Form Checkbox
   const serviceCtas = document.querySelectorAll('.service-card-cta');
   serviceCtas.forEach(cta => {
     cta.addEventListener('click', (e) => {
@@ -128,10 +116,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Checkbox Chip Visual State Sync
   const chipCheckboxes = document.querySelectorAll('.chip-checkbox-label input[type="checkbox"]');
   chipCheckboxes.forEach(cb => {
-    // Initial state
+
     if (cb.checked) {
       cb.closest('.chip-checkbox-label').classList.add('checked');
     }
@@ -144,22 +131,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 7. FAQ Accordion Functionality
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
     const btn = item.querySelector('.faq-question-btn');
     if (!btn) return;
     btn.addEventListener('click', () => {
       const isActive = item.classList.contains('active');
-      
-      // Close all other items
+
       faqItems.forEach(other => {
         other.classList.remove('active');
         const otherBtn = other.querySelector('.faq-question-btn');
         if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
       });
 
-      // Toggle current
       if (!isActive) {
         item.classList.add('active');
         btn.setAttribute('aria-expanded', 'true');
@@ -167,11 +151,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 8. Contact Form Handling, Validation & Google Sheets / Excel Sync
   const contactForm = document.getElementById('growthContactForm');
   const formFeedback = document.getElementById('formFeedback');
 
-  // Google Apps Script Web App URL for Google Sheets / Excel integration
   const GOOGLE_SHEET_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbwztcnygk029l_B1fjW_vSlFQUH9FblqomT03rDm5fNCVTWSQ_hA6rKnU5s4_QHGgsh/exec';
 
   if (contactForm) {
@@ -185,39 +167,33 @@ document.addEventListener('DOMContentLoaded', () => {
       const websiteInput = document.getElementById('websiteUrl');
       const budgetInput = document.getElementById('monthlyBudget');
 
-      // Clear previous error states
       [nameInput, emailInput, phoneInput, websiteInput, budgetInput].forEach(inp => {
         if (inp) inp.classList.remove('error');
       });
       formFeedback.className = 'form-feedback-alert';
       formFeedback.style.display = 'none';
 
-      // Validate Name
       if (!nameInput.value.trim()) {
         nameInput.classList.add('error');
         isValid = false;
       }
 
-      // Validate Email
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(emailInput.value.trim())) {
         emailInput.classList.add('error');
         isValid = false;
       }
 
-      // Validate Phone (if present)
       if (phoneInput && (!phoneInput.value.trim() || phoneInput.value.trim().length < 8)) {
         phoneInput.classList.add('error');
         isValid = false;
       }
 
-      // Validate Website
       if (!websiteInput.value.trim() || !websiteInput.value.includes('.')) {
         websiteInput.classList.add('error');
         isValid = false;
       }
 
-      // Validate Budget
       if (!budgetInput.value) {
         budgetInput.classList.add('error');
         isValid = false;
@@ -230,7 +206,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Collect complete lead payload
       const selectedServices = Array.from(contactForm.querySelectorAll('input[name="services"]:checked'))
         .map(cb => cb.value)
         .join(', ');
@@ -248,7 +223,6 @@ document.addEventListener('DOMContentLoaded', () => {
         message: messageInput ? messageInput.value.trim() : ''
       };
 
-      // Always save locally in localStorage as a backup
       try {
         const storedLeads = JSON.parse(localStorage.getItem('growthpilot_leads') || '[]');
         storedLeads.push(leadData);
@@ -257,7 +231,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('LocalStorage backup error:', err);
       }
 
-      // Show submitting state
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalBtnContent = submitBtn.innerHTML;
       submitBtn.disabled = true;
@@ -268,7 +241,6 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.innerHTML = originalBtnContent;
         if (window.lucide) lucide.createIcons();
 
-        // Show Success Feedback
         formFeedback.innerHTML = `
           <strong>Growth Audit Request Received!</strong><br>
           Thank you ${nameInput.value.trim()}. Your details have been securely recorded. Our lead performance strategist will review your brand's metrics and send a personalized scaling roadmap within 24 business hours to ${emailInput.value.trim()}.
@@ -276,12 +248,10 @@ document.addEventListener('DOMContentLoaded', () => {
         formFeedback.classList.add('success');
         formFeedback.style.display = 'block';
 
-        // Reset form inputs except feedback
         contactForm.reset();
         document.querySelectorAll('.chip-checkbox-label').forEach(chip => chip.classList.remove('checked'));
       };
 
-      // Post to Google Sheets Webhook if URL is configured
       if (GOOGLE_SHEET_WEBHOOK_URL) {
         fetch(GOOGLE_SHEET_WEBHOOK_URL, {
           method: 'POST',
@@ -299,13 +269,12 @@ document.addEventListener('DOMContentLoaded', () => {
           finishSubmission();
         });
       } else {
-        // Fallback smooth transition when webhook URL is awaiting deployment
+
         setTimeout(finishSubmission, 900);
       }
     });
   }
 
-  // 9. Privacy Policy & Terms Modal
   const legalModal = document.getElementById('legalModal');
   const modalCloseBtn = document.getElementById('modalCloseBtn');
   const modalTitle = document.getElementById('modalTitle');
@@ -373,7 +342,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 10. Interactive Growth Simulator Engine
   const simSpend = document.getElementById('simSpend');
   const simRevenue = document.getElementById('simRevenue');
   const simAov = document.getElementById('simAov');
@@ -410,26 +378,21 @@ document.addEventListener('DOMContentLoaded', () => {
       const currentRev = parseFloat(simRevenue.value) || 360000;
       const aov = parseFloat(simAov.value) || 1499;
 
-      // Automatically calculate Current ROAS
       const currentRoas = parseFloat((currentRev / Math.max(1000, spend)).toFixed(2));
 
-      // Update pills
       if (simSpendVal) simSpendVal.textContent = fmtCurr(spend);
       if (simRevenueVal) simRevenueVal.textContent = fmtCurr(currentRev);
       if (simAovVal) simAovVal.textContent = fmtCurr(aov);
 
-      // Update slider gradient tracks
       updateSliderTrack(simSpend);
       updateSliderTrack(simRevenue);
       updateSliderTrack(simAov);
 
-      // Baseline figures
       const baselineOrders = Math.round(currentRev / Math.max(1, aov));
 
       if (baselineRoasDisplay) baselineRoasDisplay.textContent = currentRoas.toFixed(1) + 'x';
       if (baselineOrdersDisplay) baselineOrdersDisplay.textContent = '~' + fmtNum(baselineOrders);
 
-      // Full-funnel growth multipliers
       let roasMultiplier = 1.68;
       if (currentRoas >= 3.5) roasMultiplier = 1.40;
       else if (currentRoas >= 2.6) roasMultiplier = 1.52;
@@ -438,14 +401,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const projectedRev = Math.round(spend * projectedRoas);
       const unlockedRev = Math.max(0, projectedRev - currentRev);
 
-      // 15% AOV lift via smart bundles & CRO checkout loops
       const projectedAov = Math.round(aov * 1.15);
       const projectedOrders = Math.round(projectedRev / Math.max(1, projectedAov));
 
       const roasLiftPct = Math.round(((projectedRoas - currentRoas) / Math.max(0.1, currentRoas)) * 100);
       const ordersLiftPct = Math.round(((projectedOrders - baselineOrders) / Math.max(1, baselineOrders)) * 100);
 
-      // Update Result Elements
       if (projectedRevVal) projectedRevVal.textContent = fmtCurr(projectedRev);
       if (unlockedRevVal) unlockedRevVal.textContent = '+' + fmtCurr(unlockedRev);
 
@@ -458,18 +419,15 @@ document.addEventListener('DOMContentLoaded', () => {
       if (ordersLiftTag) ordersLiftTag.textContent = '+' + ordersLiftPct + '%';
     };
 
-    // Attach real-time input listeners
     ['input', 'change'].forEach((evt) => {
       simSpend.addEventListener(evt, calculateSimulation);
       simRevenue.addEventListener(evt, calculateSimulation);
       simAov.addEventListener(evt, calculateSimulation);
     });
 
-    // Initial calculation on load
     calculateSimulation();
   }
 
-  // 13.5 Case Studies Hero Interactive Industry Selector
   const industryList = document.getElementById('caseIndustriesList');
   const industryImg = document.getElementById('caseIndustryImg');
   const industryBadgeTitle = document.getElementById('caseIndustryBadgeTitle');
@@ -486,7 +444,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const newTitle = item.getAttribute('data-industry-title');
         const newMetric = item.getAttribute('data-industry-metric');
 
-        // Smooth image fade
         industryImg.style.opacity = '0.3';
         setTimeout(() => {
           if (newImg) industryImg.src = newImg;
@@ -498,7 +455,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 14. Case Studies Category Filter & Interactive Detail Modal
   const filterBar = document.getElementById('caseFilterBar');
   const caseCards = document.querySelectorAll('.case-proof-card');
 
@@ -524,7 +480,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Case Study Detailed Data Repository
   const caseData = {
     1: {
       title: "Scaling D2C Apparel from ₹45 Lakh to ₹2.18 Crore/Month with Algorithmic Media Buying",
