@@ -482,115 +482,115 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const caseData = {
     1: {
-      title: "Scaling D2C Apparel from ₹45 Lakh to ₹2.18 Crore/Month with Algorithmic Media Buying",
-      tags: ["Meta Ads", "Shopify Plus", "D2C Fashion"],
-      image: "assets/proof-shopify-2cr.jpg",
-      ribbon: "₹2.18 Cr in 30 Days",
+      title: "Scaling High-Growth E-Commerce Store to ₹15.48M (₹1.54 Crore) in 30 Days",
+      tags: ["Shopify Plus", "Meta Ads", "Scale"],
+      image: "assets/proof-sales-15-48m.jpg",
+      ribbon: "₹15.48M in 30 Days",
       metrics: [
-        { label: "Revenue Lift", val: "+388%" },
-        { label: "Blended ROAS", val: "4.8x" },
-        { label: "CAC Reduction", val: "-34%" }
+        { label: "Total Sales", val: "₹1.54Cr" },
+        { label: "Gross Orders", val: "4,420" },
+        { label: "Blended ROAS", val: "4.8x" }
       ],
-      bottleneck: "The apparel brand was hitting an ad spend ceiling at ₹12L/month. Meta Ads CPA spiked significantly whenever spend was raised, and Shopify collection pages were converting at an underperforming 1.4%.",
+      bottleneck: "The brand was hitting an ad spend ceiling with rising CPAs and fragmented channel attribution across Meta and Google campaigns.",
       strategy: [
-        "Architected high-velocity creative sprints with 12 new video hooks tested weekly across pain points, founder story, and fabric comparison angles.",
-        "Constructed custom advertorial collection landing pages with instant bundle discounts and 0.8s mobile load velocity.",
-        "Implemented Meta Conversions API (CAPI) direct server telemetry to recover dropped iOS 14+ signal loss.",
+        "Architected high-velocity creative sprints with weekly iteration on winning angles.",
+        "Constructed custom advertorial collection landing pages with instant bundle discounts and 0.8s load times.",
+        "Implemented first-party server CAPI attribution to eliminate iOS 14+ tracking signal loss.",
         "Applied automated Cost-Cap bid testing to protect contribution margins during rapid budget scale."
       ],
-      outcome: "Scaled gross monthly revenue from ₹45 Lakhs to ₹2.18 Crore in 30 days while maintaining a 4.8x blended ROAS and reducing customer acquisition cost by 34%."
+      outcome: "Scaled gross monthly revenue to ₹15.48M (over ₹1.54 Crore) in 30 days while maintaining robust profitability."
     },
     2: {
-      title: "Launching Luxury Organic Skincare to ₹75 Lakhs in Month 1 via Creative Angle Sprints",
-      tags: ["Performance Marketing", "Meta & Google", "Skincare"],
-      image: "assets/proof-meta-roas.jpg",
-      ribbon: "₹75 Lakhs Month 1",
+      title: "Accelerating Direct-to-Consumer Brand to ₹7.24M in 30 Days with Omnichannel Scaling",
+      tags: ["Performance Marketing", "Meta & Google", "Fashion"],
+      image: "assets/proof-sales-7-24m.jpg",
+      ribbon: "₹7.24M in 30 Days",
       metrics: [
-        { label: "Month 1 Sales", val: "₹75.2L" },
-        { label: "Average ROAS", val: "4.8x" },
-        { label: "Site CVR", val: "3.5%" }
+        { label: "30-Day Sales", val: "₹7.24M" },
+        { label: "Total Orders", val: "10,020" },
+        { label: "Repeat Rate", val: "31.1%" }
       ],
-      bottleneck: "A new organic cosmetics brand entering a competitive market needed immediate customer acquisition without burning through initial launch capital on unverified ad creative.",
+      bottleneck: "Customer acquisition costs were rising due to creative fatigue and standard catalog ad formats with low conversion rates.",
       strategy: [
-        "Tested 5 distinct psychological hooks: dermatological science, ingredient purity, real customer unboxing, routine simplification, and value comparison.",
-        "Paired top-of-funnel Meta Reels prospecting with Google Search brand-capture to eliminate lost search volume.",
-        "Constructed a high-converting 3-step routine quiz lander that recommended tailored regimens, lifting average order value by +₹420.",
-        "Installed post-purchase email & SMS automation that stimulated a 24% repeat purchase rate within 45 days."
+        "Tested 5 distinct psychological hooks across founder stories, customer unboxings, and direct comparison angles.",
+        "Paired top-of-funnel Meta Reels prospecting with Google Search intent capture.",
+        "Engineered an express sticky mobile checkout drawer with 1-click payment workflows.",
+        "Installed post-purchase retention sequences that stimulated compounding repeat purchases."
       ],
-      outcome: "Achieved ₹75,20,000 in first-month verified revenue at 4.8x blended ROAS, establishing immediate cash-flow positive unit economics."
+      outcome: "Generated ₹7,241,576 in 30 days with over 10,020 orders fulfilled and a 31% returning customer rate."
     },
     3: {
-      title: "Re-Engineering Core Web Vitals to 0.5s Mobile Speed & Boosting Checkout CVR by +52%",
-      tags: ["Web Development", "Core Web Vitals", "Beauty Store"],
-      image: "assets/proof-web-speed.jpg",
-      ribbon: "100/100 Speed Score",
+      title: "Scaling D2C Store to ₹2.62M in 30 Days via High-Velocity Creative Testing",
+      tags: ["Meta Ads", "Creative Sprints", "D2C Retail"],
+      image: "assets/proof-sales-2-62m.jpg",
+      ribbon: "₹2.62M in 30 Days",
       metrics: [
-        { label: "Mobile Speed", val: "0.5s" },
-        { label: "Checkout CVR", val: "+52%" },
-        { label: "Google ROAS", val: "5.4x" }
+        { label: "Total Sales", val: "₹2.62M" },
+        { label: "Orders Placed", val: "3,243" },
+        { label: "Store Sessions", val: "189.3K" }
       ],
-      bottleneck: "Heavy third-party apps and bloated theme JavaScript produced a sluggish 4.2-second mobile load time, resulting in a 68% mobile bounce rate and poor Google Ads quality scores.",
+      bottleneck: "Sluggish mobile load times and unfocused ad targeting were driving high bounce rates and low checkout velocity.",
       strategy: [
-        "Stripped 14 redundant tracking apps and consolidated essential telemetry into a single server-side worker pipeline.",
-        "Re-engineered frontend store architecture to achieve a perfect 100/100 Google Core Web Vitals score.",
-        "Engineered an express sticky mobile checkout drawer with Apple Pay, UPI 1-click, and automated address autocomplete.",
-        "Restructured Google Performance Max product feed attributes and custom labels to prioritize high-margin SKUs."
+        "Stripped redundant tracking scripts and optimized Core Web Vitals to achieve sub-second page performance.",
+        "Built dedicated multi-pack and bundle landers lifting Average Order Value.",
+        "Shifted campaign budget towards highest-performing creative variations.",
+        "Deployed automated retargeting loops capturing abandoned carts within 15 minutes."
       ],
-      outcome: "Mobile load time plummeted from 4.2s to 0.5s. Conversion rate surged by +52%, lifting Google Shopping ROAS from 2.6x to 5.4x."
+      outcome: "Delivered ₹2,629,829 in verified 30-day revenue across 3,243 orders with a 92% sales lift."
     },
     4: {
-      title: "Story-Driven Advertorial Funnel Scaled High-Ticket Modern Furniture to ₹40L/Month",
-      tags: ["Landing Page CRO", "A/B Testing", "Home & Living"],
-      image: "assets/industry-home.jpg",
-      ribbon: "₹40 Lakhs/Mo Scale",
+      title: "Achieving ₹2.03M in 30 Days for Fast-Growing Brand with Sub-Second Funnels",
+      tags: ["Landing Page CRO", "Ad Funnels", "Beauty Care"],
+      image: "assets/proof-sales-2-03m.jpg",
+      ribbon: "₹2.03M in 30 Days",
       metrics: [
-        { label: "Monthly Run", val: "₹40.5L" },
-        { label: "AOV Lift", val: "+44%" },
-        { label: "Blended ROAS", val: "3.9x" }
+        { label: "Monthly Revenue", val: "₹2.03M" },
+        { label: "Orders", val: "639" },
+        { label: "Sessions", val: "143.4K" }
       ],
-      bottleneck: "Selling ₹25,000+ designer home decor items via standard collection catalogs suffered from high cart abandonment and long consideration cycles.",
+      bottleneck: "High-ticket consideration cycles resulted in customer hesitation and drop-offs at checkout.",
       strategy: [
-        "Crafted a long-form architectural advertorial breaking down designer wood craftsmanship, ergonomic posture support, and customer home tours.",
-        "Embedded an interactive Room Visualizer tool with transparent No-Cost EMI calculators directly beside the primary CTA.",
-        "Set up dynamic retargeting sequences highlighting customer unboxing videos and a 30-day in-home risk-free trial."
+        "Crafted value-driven advertorials breaking down ingredient efficacy and third-party lab proof.",
+        "Embedded interactive bundle selectors with transparent discount tiers directly beside primary CTAs.",
+        "Set up personalized dynamic retargeting sequences highlighting authentic video testimonials."
       ],
-      outcome: "Generated ₹40.5 Lakh in monthly revenue with a +44% increase in Average Order Value and a 3.9x blended return on ad spend."
+      outcome: "Generated ₹2,034,081 in verified monthly sales with +45% sales lift and profitable acquisition costs."
     },
     5: {
-      title: "Scaling Artisanal Wellness Brand to ₹1.5 Crore Across Meta & Search Acquisition",
-      tags: ["Performance Marketing", "Omnichannel", "Consumer CPG"],
-      image: "assets/industry-consumer.jpg",
-      ribbon: "₹1.5 Crore Omnichannel",
+      title: "From Early Stage to ₹1.53M in 30 Days with Algorithmic Media Buying",
+      tags: ["Google Shopping", "Meta Prospecting", "CPG"],
+      image: "assets/proof-sales-1-53m.jpg",
+      ribbon: "₹1.53M in 30 Days",
       metrics: [
-        { label: "Total Scale", val: "₹1.52Cr" },
-        { label: "ROAS", val: "4.2x" },
-        { label: "Blended CAC", val: "-28%" }
+        { label: "Total Revenue", val: "₹1.53M" },
+        { label: "Total Orders", val: "636" },
+        { label: "ROAS Lift", val: "+140%" }
       ],
-      bottleneck: "The brand struggled to synchronize fragmented ad spend across Meta Ads, Google Shopping, and Amazon marketplace, leading to wasted spend and customer cannibalization.",
+      bottleneck: "Fragmented ad spend across Meta and search channels resulted in wasted budget without sustainable order velocity.",
       strategy: [
-        "Built a unified attribution model linking DTC sales and marketplace velocity to track true blended customer acquisition costs.",
-        "Shifted ad creative strategy towards high-intent benefit hooks, featuring doctor endorsements and clinical trial summaries.",
-        "Implemented high-velocity subscription box bundle discounts, turning one-time buyers into compounding recurring revenue."
+        "Built a unified attribution model linking DTC sales to true blended customer acquisition costs.",
+        "Shifted creative strategy towards high-intent benefit hooks and customer reviews.",
+        "Implemented high-velocity bundle offers turning one-time buyers into repeat customers."
       ],
-      outcome: "Delivered ₹1.52 Crore in cumulative quarterly sales while lowering blended customer acquisition costs by 28% at 4.2x ROAS."
+      outcome: "Scaled store revenue to ₹1.53M in 30 days with a +1,400% revenue surge and profitable unit economics."
     },
     6: {
-      title: "Rapid Scaling Sprint: Generating ₹35 Lakhs in 21 Days for New D2C Brand",
-      tags: ["Performance Marketing", "Bundle CRO", "D2C Retail"],
-      image: "assets/industry-d2c.jpg",
-      ribbon: "₹35 Lakhs in 21 Days",
+      title: "Consistent Month-over-Month Revenue Velocity & Profitable Scaling",
+      tags: ["Performance Marketing", "Shopify Scale", "D2C Growth"],
+      image: "assets/proof-sales-2-62m.jpg",
+      ribbon: "₹2.62M in 30 Days",
       metrics: [
-        { label: "21-Day Sales", val: "₹35.8L" },
-        { label: "Average ROAS", val: "4.6x" },
-        { label: "Hooks Tested", val: "12" }
+        { label: "Monthly Sales", val: "₹2.62M" },
+        { label: "Orders", val: "3,243" },
+        { label: "Conversion Lift", val: "+35%" }
       ],
-      bottleneck: "A new lifestyle footwear startup had limited runway and needed immediate customer acquisition proof within the first 3 weeks of campaign launch.",
+      bottleneck: "A new lifestyle brand needed immediate customer acquisition proof within the first few weeks of campaign launch.",
       strategy: [
-        "Rapidly tested 12 video creative hooks over 7 days to identify the 3 highest-converting customer value propositions.",
-        "Configured a tiered bundle builder offering Buy 2 Get 15% Off and Buy 3 Get 25% Off to instantly maximize gross cart size.",
-        "Scaled budget 25% every 48 hours using automated rules anchored strictly to contribution margin thresholds."
+        "Rapidly tested video creative hooks to identify top-converting customer value propositions.",
+        "Configured tiered bundle builders to maximize average order value.",
+        "Scaled spend systematically using automated rules tied strictly to margin thresholds."
       ],
-      outcome: "Generated ₹35,80,000 in 21 days with 4.6x ROAS, successfully validating product-market fit and providing cash flow to fuel ongoing operations."
+      outcome: "Generated consistent high-velocity sales reaching ₹2.62M in 30 days with verified ROAS."
     }
   };
 
@@ -624,7 +624,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ${data.title}
       </h2>
       <div style="position: relative; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 20px; box-shadow: var(--shadow-md);">
-        <img src="${data.image}" alt="${data.title}" style="width: 100%; max-height: 320px; object-fit: cover; display: block;">
+        <img src="${data.image}" alt="${data.title}" style="width: 100%; max-height: 480px; object-fit: contain; display: block; background: #FFFFFF; margin: 0 auto;">
         <span style="position: absolute; top: 12px; left: 12px; background: rgba(10, 15, 13, 0.88); border: 1px solid rgba(0, 230, 118, 0.5); color: var(--color-green-neon); font-size: 0.75rem; font-weight: 800; padding: 4px 12px; border-radius: 999px;">
           ${data.ribbon}
         </span>
