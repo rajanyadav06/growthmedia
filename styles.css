@@ -1290,13 +1290,16 @@ button, input, select, textarea {
 }
 
 .hero-bg-contact {
+  position: relative;
   background-color: #FFFFFF;
   background-image: 
-    linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.20) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.86) 100%),
     url('assets/contact-bg.jpg') !important;
   background-size: cover !important;
-  background-position: center center !important;
+  background-position: center 38% !important;
   background-repeat: no-repeat !important;
+  padding-top: 64px !important;
+  padding-bottom: 68px !important;
 }
 
 .hero-bg-home .hero-title,
