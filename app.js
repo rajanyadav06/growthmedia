@@ -1,13 +1,21 @@
 
-document.addEventListener('DOMContentLoaded', () => {
-
-  if (window.lucide) {
+function initLucideIcons() {
+  if (window.lucide && typeof lucide.createIcons === 'function') {
     lucide.createIcons({
       attrs: {
         'stroke-width': 2.2
       }
     });
   }
+}
+
+// Initialize immediately if script already loaded
+initLucideIcons();
+window.addEventListener('load', initLucideIcons);
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  initLucideIcons();
 
   const yearEl = document.getElementById('currentYear');
   if (yearEl) {
@@ -133,14 +141,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
-    const btn = item.querySelector('.faq-question-btn');
+    const btn = item.querySelector('.faq-question-btn, .faq-btn');
     if (!btn) return;
     btn.addEventListener('click', () => {
       const isActive = item.classList.contains('active');
 
       faqItems.forEach(other => {
         other.classList.remove('active');
-        const otherBtn = other.querySelector('.faq-question-btn');
+        const otherBtn = other.querySelector('.faq-question-btn, .faq-btn');
         if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
       });
 
@@ -673,6 +681,63 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = '';
       }
     });
+  }
+
+  // Contact Page Auto Image Slider
+  const contactSlider = document.getElementById('contactAutoSlider');
+  if (contactSlider) {
+    const slides = contactSlider.querySelectorAll('.slider-slide');
+    const dots = contactSlider.querySelectorAll('.slider-dot');
+    const prevBtn = contactSlider.querySelector('.slider-prev-btn');
+    const nextBtn = contactSlider.querySelector('.slider-next-btn');
+    let currentIndex = 0;
+    let timer = null;
+
+    function goToSlide(index) {
+      if (index < 0) index = slides.length - 1;
+      if (index >= slides.length) index = 0;
+      currentIndex = index;
+
+      slides.forEach((s, i) => {
+        s.classList.toggle('active', i === currentIndex);
+      });
+      dots.forEach((d, i) => {
+        d.classList.toggle('active', i === currentIndex);
+      });
+    }
+
+    function nextSlide() {
+      goToSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      goToSlide(currentIndex - 1);
+    }
+
+    function startAutoPlay() {
+      stopAutoPlay();
+      timer = setInterval(nextSlide, 3500);
+    }
+
+    function stopAutoPlay() {
+      if (timer) clearInterval(timer);
+    }
+
+    if (nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); startAutoPlay(); });
+    if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); startAutoPlay(); });
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        goToSlide(i);
+        startAutoPlay();
+      });
+    });
+
+    contactSlider.addEventListener('mouseenter', stopAutoPlay);
+    contactSlider.addEventListener('mouseleave', startAutoPlay);
+
+    goToSlide(0);
+    startAutoPlay();
   }
 
 });
