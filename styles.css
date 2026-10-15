@@ -3629,6 +3629,22 @@ button, input, select, textarea {
   color: var(--color-growth-green);
 }
 
+.contact-form-card button[type="submit"]:active,
+.contact-form-card button[type="submit"].btn-submitting,
+.contact-form-card button[type="submit"].btn-success-green {
+  background-color: #10B981 !important;
+  background: #10B981 !important;
+  border-color: #10B981 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45) !important;
+  transition: all 0.25s ease !important;
+}
+
+.contact-form-card button[type="submit"].btn-submitting::before,
+.contact-form-card button[type="submit"].btn-success-green::before {
+  background: linear-gradient(90deg, #10B981, #059669) !important;
+}
+
 .form-feedback-alert {
   display: none;
   border-radius: var(--radius-sm);

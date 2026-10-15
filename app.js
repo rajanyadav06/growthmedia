@@ -242,11 +242,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalBtnContent = submitBtn.innerHTML;
       submitBtn.disabled = true;
+      submitBtn.classList.add('btn-submitting');
       submitBtn.innerHTML = '<span>Saving to Growth Sheet...</span>';
 
       const finishSubmission = () => {
         submitBtn.disabled = false;
-        submitBtn.innerHTML = originalBtnContent;
+        submitBtn.classList.remove('btn-submitting');
+        submitBtn.classList.add('btn-success-green');
+        submitBtn.innerHTML = '<span>✓ Submitted Successfully</span>';
         if (window.lucide) lucide.createIcons();
 
         // Meta Pixel - Lead Conversion Event for Meta Ads
@@ -266,6 +269,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         contactForm.reset();
         document.querySelectorAll('.chip-checkbox-label').forEach(chip => chip.classList.remove('checked'));
+
+        setTimeout(() => {
+          submitBtn.classList.remove('btn-success-green');
+          submitBtn.innerHTML = originalBtnContent;
+          if (window.lucide) lucide.createIcons();
+        }, 5000);
       };
 
       if (GOOGLE_SHEET_WEBHOOK_URL) {
