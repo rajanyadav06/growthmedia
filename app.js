@@ -249,6 +249,14 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.innerHTML = originalBtnContent;
         if (window.lucide) lucide.createIcons();
 
+        // Meta Pixel - Lead Conversion Event for Meta Ads
+        if (typeof window.fbq === 'function') {
+          window.fbq('track', 'Lead', {
+            content_name: 'Growth Audit Request',
+            currency: 'INR'
+          });
+        }
+
         formFeedback.innerHTML = `
           <strong>Growth Audit Request Received!</strong><br>
           Thank you ${nameInput.value.trim()}. Your details have been securely recorded. Our lead performance strategist will review your brand's metrics and send a personalized scaling roadmap within 24 business hours to ${emailInput.value.trim()}.
